@@ -34,7 +34,7 @@ Each file should contain only two columns. No index on the first column. It shou
 NaN and other abnormal values may raise error and prevent you from moving forward.
 
 **Example**
-![](assets/images/data-upload-example1.png)
+![](../../assets/images/data-upload-example1.png)
 
 ### Multi files: .csv files (two-column single spectrum files. common x)
 
