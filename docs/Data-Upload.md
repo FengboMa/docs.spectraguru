@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data Upload
-nav_order: 2
+nav_order: 3
 ---
 
 # Data Upload
@@ -42,3 +42,36 @@ NaN and other abnormal values may raise errors and prevent you from moving forwa
 Similar to the format above, but everything is in CSV format. You could include headers, but work the best with no headers.
 
 NaN and other abnormal values may raise errors and prevent you from moving forward.
+
+### Single file: .csv file (A tab-separated csv (tsv)file)
+
+A tsv (Tab-Separated Values) file is a simple text format used to store data in a tabular structure, similar to a spreadsheet or database table. In a TSV file, each row of the table corresponds to a line in the text file, and each field within a row is separated by a tab character.
+
+The Single file: .csv file (A tab-separated csv (tsv)file) upload option supports a tsv file with multiple spectra in one single file. The first column represents x-values, while the second column and after typically corresponds to y-values, such as intensity measurements ([x y y y y]format).
+
+NaN and other abnormal values may raise errors and prevent you from moving forward.
+
+**Example**
+
+A tsv file may look like the following in a Notepad with word wrap:
+
+![image2](../assets/images/data-upload-example2.png)
+
+### Single file: .csv file (A comma-separated csv (csv)file)
+
+A CSV (Comma-Separated Values) file is a widely-used text format for storing tabular data, where each line in the file corresponds to a row in the table, and fields within a row are separated by commas.
+
+Similar to Single file: .csv file (A tab-separated csv (tsv)file), Single file: .csv file (A comma-separated csv (csv)file) is expecting [x y y y y] format.
+
+{: .important }
+Dataframe exported from Spectraguru's processing page is a Single file: .csv file (A comma-separated csv (csv)file) file.
+
+**Example**
+
+A tsv file may look like the following in a Notepad:
+
+![image3](../assets/images/data-upload-example3.png)
+
+---
+
+**Need to work on a format that we are not supporting? Please send us an [email](zhao-nano-lab@uga.edu) and see if we can work something out!**
