@@ -74,11 +74,11 @@ streamlit run SpectraGuru_beta/Spectra Application Welcome.py
 
 ---
 
-### About this Project
+## About this Project
 The project was started in Jun 2024 by Dr. Yiping Zhao and Dr. Xianyan Chen from the University of Georgia as a part of a USDA-funded project. See more [about us](https://www.zhao-nano-lab.com/)!
 
 ---
 
-### Help and Support
+## Help and Support
 
 If you have any questions, comments, and observations, please let us know! Email: zhao-nano-lab@uga.edu.
