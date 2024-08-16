@@ -28,7 +28,7 @@ Our application is hosted [space holder](https://www.youtube.com/watch?v=dQw4w9W
 
 You do not have to host it locally to use the application. But if you wish to deploy it locally, please follow these steps:
 
-1. Install Python and dependencies
+- **Install Python and dependencies**
    
    SpectraGuru runs on:
 
@@ -56,7 +56,7 @@ You do not have to host it locally to use the application. But if you wish to de
 pip install -r requirements.txt
 ```
 
-2. Clone the main repo
+- **Clone the main repo**
 
 ```
 cd <FILE LOCATION>
@@ -64,13 +64,13 @@ cd <FILE LOCATION>
 git clone https://github.com/FengboMa/SpectraGuru_beta.git
 ```
 
-3. Run Spectra Application Welcome.py
-4. Run the following command
+- **Run Spectra Application Welcome.py**
+- **Run the following command**
 
 ```
 streamlit run SpectraGuru_beta/Spectra Application Welcome.py
 ```
-5. Your local version should be up in port 8501 by default in your favorite browser!
+- **Your local version should be up in port 8501 by default in your favorite browser!**
 
 ---
 
