@@ -19,7 +19,7 @@ nav_order: 3
 
 ### Visit our site
 
-{: .Note }
+{: .note }
 Aug 16, 2024. For UGA internal usage. Connect to school local area network (LAN), i.e. school Wi-Fi PAWS-Secure. And visit [here](http://172.19.194.69:8501)!
 
 Our application is hosted [space holder](https://www.youtube.com/watch?v=dQw4w9WgXcQ)! Please use it directly, as easy as it can go.
