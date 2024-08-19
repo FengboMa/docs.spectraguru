@@ -11,6 +11,7 @@ permalink: /docs/Processing_Page
 
 Use this page to Process and visualize spectra you uploaded. This page designed to process and visualize spectral data, particularly Raman spectroscopy data. The application offers users a comprehensive suite of tools to manipulate their spectral data through a sidebar interface, where they can select various processing steps, such as interpolation, cropping, despiking, smoothening, baseline removal, normalization, and outlier removal. These tools allow users to refine their spectral data, ensuring that it is well-prepared for analysis and visualization.
 
+---
 
 ## Table of contents
 {: .no_toc .text-delta }
