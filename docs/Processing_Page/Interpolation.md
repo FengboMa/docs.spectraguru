@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Interpolation
-parent: Processing_Feature
-grand_parent: Processing_Page
+parent: Processing Feature
+grand_parent: Processing Page
 permalink: /docs/Processing_Page/Processing_Feature/Interpolation/
 ---
 
