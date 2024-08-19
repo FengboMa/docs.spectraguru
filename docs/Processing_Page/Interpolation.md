@@ -12,6 +12,14 @@ permalink: /docs/Processing_Page/Processing_Feature/Interpolation/
 
 Interpolation is a critical feature in the application that allows users to resample their spectral data, particularly Ramanshift values, to ensure they align with a uniform set of integers. This process is essential for maintaining consistency across datasets, especially when comparing spectra with slightly different measurement intervals. By rounding Ramanshift values to the nearest integer and recalculating the corresponding intensity values, the application ensures that the data is smoothly and accurately represented.
 
+## How to use:
+
+To interpolate you data:
+
+0. Upload data and select spectra you want to process.
+1. Navigate to sidebar, and turn on Interpolation toggle.
+2. Click on Process button on the bottom of the sidebar.
+
 ## Behavior
 
 The expected behavior of this feature is that, after interpolation, the spectral data will have its Ramanshift values adjusted to a common set of integer values, with corresponding intensity values recalculated through linear interpolation. This adjustment ensures that all spectra within a dataset can be directly compared or combined, which is particularly useful in various analytical and visualization tasks.
@@ -34,10 +42,3 @@ where:
 
 This method effectively smooths the data, filling in gaps and creating a more consistent dataset for further analysis. The `interp1d` function from `scipy.interpolate` is a robust and efficient tool for implementing this interpolation, making it well-suited for processing spectral data.
 
-## How to use:
-
-To interpolate you data:
-
-0. Upload data and select spectra you want to process.
-1. Navigate to sidebar, and turn on Interpolation toggle.
-2. Click on Process button on the bottom of the sidebar.
