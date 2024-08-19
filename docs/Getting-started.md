@@ -5,6 +5,7 @@ nav_order: 3
 ---
 
 # Getting started
+{: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -20,9 +21,9 @@ nav_order: 3
 ### Visit our site
 
 {: .note }
-Aug 16, 2024. For UGA internal usage. Connect to school local area network (LAN), i.e. school Wi-Fi PAWS-Secure. And visit [here](http://172.19.194.69:8501)!
+Aug 16, 2024. For UGA internal usage on dev branch. Connect to school local area network (LAN), i.e. school Wi-Fi PAWS-Secure. And visit [here](http://172.19.194.69:8501)!
 
-Our application is hosted [space holder](https://www.youtube.com/watch?v=dQw4w9WgXcQ)! Please use it directly, as easy as it can go.
+Our application is hosting at [space-holder](https://www.youtube.com/watch?v=dQw4w9WgXcQ)! Please use it directly, as easy as it can go.
 
 ### Deploy locally
 

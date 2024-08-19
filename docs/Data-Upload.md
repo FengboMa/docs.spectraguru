@@ -5,6 +5,7 @@ nav_order: 4
 ---
 
 # Data Upload
+{: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -72,6 +73,14 @@ A tsv file may look like the following in a Notepad:
 
 ![image3](../assets/images/data-upload-example3.png)
 
----
 
 **Need to work on a format that we are not supporting? Please send us an [email](zhao-nano-lab@uga.edu) and see if we can work something out!**
+
+## After upload
+
+After a successful upload, user have two options redirect to Processing Page by,
+
+1. Click on Processing page button on main page
+2. Click on Processing page from sidebar
+
+A failure upload will be result in error messages in Processing and Analytics Page. The error messages will ask you go back to data upload to upload data. You would not see any follow up functions with a failure upload.  
