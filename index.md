@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-description: "SpectraGuru is a spectroscopy processing and visualization web-based application that is aimed to accelerate your research."
+description: "SpectraGuru is a spectroscopy processing and visualization web-based application aimed at accelerating your research."
 permalink: /
 ---
 
@@ -10,11 +10,10 @@ permalink: /
 
 ## What is SpectraGuru?
 
-SpectraGuru is a spectra analysis application designed to provide user-friendly tools for processing and visualizing spectra, aimed at accelerating your research. It functions as a dashboard or a specialized tool within a Python environment, organized with various modular functions that allow users to process spectroscopy data in a pipeline.
+SpectraGuru is a spectroscopy analysis application designed to provide user-friendly tools for processing and visualizing spectra, with the goal of accelerating your research. It functions as a dashboard or a specialized tool within a Python environment, organized with various modular functions that allow users to process spectroscopy data in a pipeline.
 
 {: .important }
-SpectraGuru and Documentation for SpectraGuru is currently under construction. Thank you for your patients. 
-
+SpectraGuru and its documentation are currently under construction. Thank you for your patience.
 
 <!-- This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
 

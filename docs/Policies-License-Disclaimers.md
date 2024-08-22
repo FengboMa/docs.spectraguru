@@ -17,7 +17,7 @@ nav_order: 2
 
 ## Data Usage Policy and Telemetry
 
-SpectraGuru do not gather Usage Stats. We cannot see and do not store information contained in SpectraGuru Streamlit apps. We only do a rough count via a simple trigger to display on welcome page.
+SpectraGuru does not collect or track user statistics. We are committed to user privacy and confidentiality; thus, we do not monitor or store any information processed within SpectraGuru Streamlit applications. The only user interaction we record is a basic count of accesses, implemented through a minimal trigger that displays on the welcome page. This ensures that all user data remains entirely within the user’s control and is not accessible to external parties.
 
 ## Custom License
 

@@ -21,17 +21,18 @@ nav_order: 3
 ### Visit our site
 
 {: .note }
-Aug 16, 2024. For UGA internal usage on dev branch. Connect to school local area network (LAN), i.e. school Wi-Fi PAWS-Secure. And visit [here](http://172.19.194.69:8501)!
+As of August 16, 2024: For UGA internal use on the development branch. Please connect to the school's local area network (LAN), such as the school Wi-Fi PAWS-Secure, and visit [here](http://172.19.194.69:8501)!
 
-Our application is hosting at [space-holder](https://www.youtube.com/watch?v=dQw4w9WgXcQ)! Please use it directly, as easy as it can go.
+Our application is hosted at [space-holder](https://www.youtube.com/watch?v=dQw4w9WgXcQ)! It's straightforward to use—just follow the link and start exploring.
+
 
 ### Deploy locally
 
-You do not have to host it locally to use the application. But if you wish to deploy it locally, please follow these steps:
+You do not need to host the application locally to use it. However, if you wish to deploy it on your local machine, please follow these steps:
 
-- **Install Python and dependencies**
+- **Install Python and Dependencies**
    
-   SpectraGuru runs on:
+   SpectraGuru requires the following packages:
 
        altair==5.3.0
 
@@ -51,7 +52,8 @@ You do not have to host it locally to use the application. But if you wish to de
 
        streamlit_extras==0.4.3
 
-    Or use requirements.txt to install the dependencies: 
+    Alternatively, you can install the dependencies using the provided `requirements.txt` file:
+
 
 ```
 pip install -r requirements.txt
@@ -75,11 +77,12 @@ streamlit run SpectraGuru_beta/Spectra Application Welcome.py
 
 ---
 
-## About this Project
-The project was started in Jun 2024 by Dr. Yiping Zhao and Dr. Xianyan Chen from the University of Georgia as a part of a USDA-funded project. See more [about us](https://www.zhao-nano-lab.com/)!
+## About This Project
+
+This project was initiated in June 2024 by Dr. Yiping Zhao and Dr. Xianyan Chen from the University of Georgia as part of a USDA-funded initiative. Learn more [about us](https://www.zhao-nano-lab.com/)!
 
 ---
 
 ## Help and Support
 
-If you have any questions, comments, and observations, please let us know! Email: zhao-nano-lab@uga.edu.
+If you have any questions, comments, or feedback, please reach out to us! Email: zhao-nano-lab@uga.edu.
