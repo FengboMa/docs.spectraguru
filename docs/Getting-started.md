@@ -67,7 +67,7 @@ cd <FILE LOCATION>
 git clone https://github.com/FengboMa/SpectraGuru_beta.git
 ```
 
-- **Run Spectra Application Welcome.py**
+- **Run "Spectra Application Welcome.py"**
 - **Run the following command**
 
 ```
