@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Policy, License and Disclaimers
+title: Policy and Disclaimers
 nav_order: 2
 ---
 
-# Policy, License and Disclaimer
+# Policy and Disclaimer
 {: .no_toc }
 
 ## Table of contents
@@ -19,9 +19,9 @@ nav_order: 2
 
 SpectraGuru does not collect or track user statistics. We are committed to user privacy and confidentiality; thus, we do not monitor or store any information processed within SpectraGuru Streamlit applications. The only user interaction we record is a basic count of accesses, implemented through a minimal trigger that displays on the welcome page. This ensures that all user data remains entirely within the user’s control and is not accessible to external parties.
 
-## Custom License
+<!-- ## Custom License
 
-SpectraGuru is the property of the University of Georgia Research Foundation (UGARF), copyright © 2024. All rights reserved to the software, but not the content, and all intellectual property rights to the software therein belong to UGARF. By accessing SpectraGuru, users consent to use this software and database solely for informational purposes. Selling, distributing, publishing, circulating, or commercially exploiting the data in this database without the express written permission of the owners of the data is expressly prohibited.
+SpectraGuru is the property of the University of Georgia Research Foundation (UGARF), copyright © 2024. All rights reserved to the software, but not the content, and all intellectual property rights to the software therein belong to UGARF. By accessing SpectraGuru, users consent to use this software and database solely for informational purposes. Selling, distributing, publishing, circulating, or commercially exploiting the data in this database without the express written permission of the owners of the data is expressly prohibited. -->
 
 ## Disclaimer
 

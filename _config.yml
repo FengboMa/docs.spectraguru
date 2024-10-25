@@ -16,7 +16,7 @@ url: https://github.com/FengboMa/docs.spectraguru
 back_to_top: true
 back_to_top_text: "Back to top"
 
-footer_content: "Copyright &copy; UGARF. Distributed by a <a href=\"https://fengboma.github.io/docs.spectraguru/docs/Policies-License-Disclaimers.html#custom-license\">Custom license.</a> "
+footer_content: "Policies and Disclaimers <a href=\"https://fengboma.github.io/docs.spectraguru/docs/Policies-Disclaimers.html\">here.</a> "
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
