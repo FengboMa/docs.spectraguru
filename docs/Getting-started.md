@@ -23,7 +23,7 @@ nav_order: 3
 {: .note }
 As of August 16, 2024: For UGA internal use on the development branch. Please connect to the school's local area network (LAN), such as the school Wi-Fi PAWS-Secure, and visit [here](http://172.19.194.69:8501)!
 
-Our application is hosted at [space-holder](https://www.youtube.com/watch?v=dQw4w9WgXcQ)! It's straightforward to use—just follow the link and start exploring.
+Our application is hosted at [spectraguru.org](https://spectraguru.org)! It's straightforward to use — just follow the link and start exploring.
 
 
 ### Deploy locally
