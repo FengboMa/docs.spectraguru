@@ -25,7 +25,7 @@ Overview of the processing features on this page.
 |---------------------|---------------------------------------------------|-----------|
 | Interpolation       |               | [Interpolation](https://fengboma.github.io/docs.spectraguru/docs/Processing_Page/Interpolation.md)          |
 | Cropping            |                       |           |
-| Despiking           | Despike with Threshold, Zap Length                      | [Despiking](https://fengboma.github.io/docs.spectraguru/docs/Processing_Page.md)Despike/          |
+| Despiking           | Despike with Threshold, Zap Length                      | [Despiking](https://fengboma.github.io/docs.spectraguru/docs/Processing_Page.md)          |
 | Smoothening         | Savitzky-Golay Filter, 1D Fast Fourier Transform    |           |
 | Baseline Removal    | airPLS, ModPoly                                    |           |
 | Normalization       | Normalize by Area, Normalize by Peak, Min Max Normalize |      |
