@@ -1,6 +1,6 @@
 title: SpectraGuru Documentation
 description: SpectraGuru Documentation page!
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 favicon_ico: "/assets/images/favicon.png"
 logo: "/assets/images/logo.png"
 
@@ -9,8 +9,12 @@ url: https://github.com/FengboMa/docs.spectraguru
 
 markdown: kramdown
 
+kramdown:
+  math_engine: katex
+
 just_the_docs:
-  math_renderer: katex 
+  math_renderer: katex
+
 
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template
