@@ -6,7 +6,7 @@ has_children: true
 nav_order: 6
 ---
 
-# Processing Feature
+# Processing Features
 {: .no_toc }
 
 <!-- ## Table of contents
@@ -19,7 +19,7 @@ nav_order: 6
 
 ## Processing Features Introduction
 
-Overview of processing feature on this page,
+Overview of the processing features on this page.
 
 | Feature             | Sub Functions                                      | More Info |
 |---------------------|---------------------------------------------------|-----------|
@@ -31,4 +31,4 @@ Overview of processing feature on this page,
 | Normalization       | Normalize by Area, Normalize by Peak, Min Max Normalize |      |
 | Outlier Removal     | Single Threshold, Distance Threshold, Correlation Threshold |    |
 
-Please find more useful information in child documents.
+Please find more detailed information in child documents.

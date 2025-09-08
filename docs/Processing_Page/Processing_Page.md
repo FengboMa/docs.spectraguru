@@ -9,7 +9,7 @@ permalink: /docs/Processing_Page
 # Processing Page
 {: .no_toc }
 
-This page is dedicated to the processing and visualization of uploaded spectral data, with a particular focus on Raman spectroscopy. The application provides a comprehensive suite of tools through a user-friendly sidebar interface, allowing users to efficiently manipulate your spectral data. Available processing steps include interpolation, cropping, despiking, smoothing, baseline removal, normalization, and outlier removal. These functionalities enable users to meticulously refine your data, ensuring it is optimally prepared for further analysis and visualization.
+This page is dedicated to the processing and visualization of uploaded spectral data, with a particular focus on Raman spectroscopy. The application provides a comprehensive suite of tools through a user-friendly sidebar interface, allowing users to efficiently manipulate their spectral data. Available processing steps include interpolation, cropping, despiking, smoothing, baseline removal, normalization, and outlier removal. These functionalities enable users to meticulously refine your data, ensuring it is optimally prepared for further analysis and visualization.
 
 
 ## General Operation
