@@ -1,6 +1,8 @@
 title: SpectraGuru Documentation
 description: SpectraGuru Documentation page!
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.9.0
+plugins:
+  - jekyll-remote-theme
 favicon_ico: "/assets/images/favicon.png"
 logo: "/assets/images/logo.png"
 
