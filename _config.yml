@@ -9,11 +9,8 @@ url: https://github.com/FengboMa/docs.spectraguru
 
 markdown: kramdown
 
-kramdown:
-  math_engine: katex
-
-just_the_docs:
-  math_renderer: katex
+# This is just a flag we read in head_custom.html; it does NOT load a gem.
+math: katex
 
 
 # aux_links:

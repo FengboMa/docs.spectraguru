@@ -1,15 +1,19 @@
 # .github/workflows/jekyll.yml
 name: Build & Deploy Jekyll (Pages)
+
 on:
   push: { branches: [ "main" ] }
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,12 +21,14 @@ jobs:
       - uses: actions/checkout@v4
       - id: pages
         uses: actions/configure-pages@v5
-      - uses: actions/jekyll-build-pages@v1
+      - uses: actions/jekyll-build-pages@v1 
         with:
           source: .
           destination: ./_site
       - uses: actions/upload-pages-artifact@v3
-        with: { path: ./_site }
+        with:
+          path: ./_site
+
   deploy:
     environment:
       name: github-pages
