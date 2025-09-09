@@ -7,7 +7,7 @@ permalink: /docs/Analytics_Page/Analytics_Features/Principal_Component_Analysis/
 nav_order: 7
 ---
 
-# Hierarchically-clustered Heatmap
+# Principal Component Analysis (PCA)
 {: .no_toc }
 
 ## Table of Contents
