@@ -4,7 +4,7 @@ title: Confidence Interval Plot
 parent: Analytics Features
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Confidence_Interval_Plot/
-nav_order: 1
+nav_order: 2
 ---
 
 # Average Plot with Original Spectra
