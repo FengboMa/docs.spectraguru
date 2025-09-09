@@ -7,7 +7,7 @@ permalink: /docs/Analytics_Page/Analytics_Features/Confidence_Interval_Plot/
 nav_order: 2
 ---
 
-# Average Plot with Original Spectra
+# Confidence Interval Plot
 {: .no_toc }
 
 ## Table of Contents

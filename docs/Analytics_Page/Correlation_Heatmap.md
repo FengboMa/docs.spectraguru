@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Confidence Interval Plot
+title: Correlation Heatmap
 parent: Analytics Features
 grand_parent: Analytics Page
-permalink: /docs/Analytics_Page/Analytics_Features/Confidence_Interval_Plot/
+permalink: /docs/Analytics_Page/Analytics_Features/Correlation_Heatmap/
 nav_order: 4
 ---
 
-# Average Plot with Original Spectra
+# Correlation Heatmap
 {: .no_toc }
 
 ## Table of Contents
