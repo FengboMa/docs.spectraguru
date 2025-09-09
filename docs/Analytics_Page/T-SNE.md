@@ -17,3 +17,29 @@ nav_order: 7
 {:toc}
 
 ---
+
+## Introduction
+
+T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reduction algorithm that preserves the clustering of high-dimensional data. In other words, T-SNE is a way to visualize data that cannot be plotted traditionally in two or three dimensions. This is useful for understanding which samples are most similar to each other. However, unlike PCA, t-SNE generally produces plots where the axes do not encode any meaningful information on their own, since the focus is simply to preserve the relative distance between data points.
+
+## How to Use
+
+0. In the analytics page, after processing your data, select “T-SNE Dimensionality Reduction” from the drop-down menu on the left sidebar.
+1. Use the slider labeled “t-SNE Perplexity” to set the perplexity used by the t-SNE algorithm.
+2. Use the slider labeled “t-SNE Maximum number of iterations” to set the maximum number of iterations the t-SNE algorithm performs before stopping. This can be useful for large data sets which may be computationally expensive to process.
+3. The plot labeled “t-SNE Visualization” is a projection of all of your samples into 2 dimensions. The horizontal and vertical axes do not encode any meaningful information; instead, the plot is a visualization tool meant to separate the samples into different clusters based on their similarity.
+
+## Definitions
+
+- The *Euclidean distance* ] between two samples ] and ] is defined as ], where ] and ] represent the intensities of samples ] and ] at Raman shift ]. This may also be written as ].
+- A *Gaussian distribution* is a probability distribution also known as a normal distribution or a "bell curve," expressed mathematically as ], where ] is the standard deviation of the distribution.
+- The *scaled similarity* between a sample ] and another sample ] is based on the normalized Gaussian distribution of their distance compared to all other points, defined by ], where ] is the standard deviation for sample ], selected to universalize the *perplexity* chosen by the user (see the next paragraph on perplexity).
+- *Perplexity* is a measure of the size of clusters in a data set. Data sets with large clusters have higher perplexity, while data sets with small, numerous clusters have lower perplexity. However, perplexity is a little subjective and is never calculated explicitly. Its value is guessed by the user (values between `5` and `50` typically yield the best results) and then used to determine the standard deviations for each point’s Gaussian distribution using the following formula: ], where ] is the perplexity, and ] is the scaled similarity between samples ] and ]. This formula is used to solve for the standard deviation ] of the Gaussian distribution around ] that satisfies the equation. A low perplexity should be chosen if the user wants data to be grouped into fine categories, and a higher perplexity should be chosen for broader categories.
+- *T-distributed similarity* is like the standard similarity, but instead of using a Gaussian distribution, a *Student's t-distribution* is used. The t-distribution used by this algorithm is expressed as ], and it looks like a shorter version of the Gaussian bell curve with higher edges. The t-distributed similarity ] between two samples ] and ] is defined as ].
+- *Kullback-Leibler divergence* is a way of measuring how much two probability distributions differ. By treating the similarity values of the true data and projected data as probability distributions, we can use Kullback-Leibler divergence to quantify how accurate the current model is. You can think of the “probabilities” corresponding to the similarity values as the probabilities of two points being part of the same cluster. Kullback-Leibler divergence is denoted by ] and is defined as ], where ] and ] are probability distributions.
+- *Gradient descent* is a minimization algorithm that calculates the gradient vector of a function at a particular input and takes a step in the opposite direction to determine the next input, since the gradient vector points in the direction where the function increases the fastest. This will be used to minimize the Kullback-Leibler divergence mentioned above.
+
+## Behavior
+
+- Algorithm: SpectraGuru uses Scikit-learn's [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class to analyze your data. The algorithm for this analysis works as follows:
+    0. Find the Euclidean distances between each pair of samples (see [hierarchically-clustered_heatmap](https://fengboma.github.io/docs.spectraguru/docs/Analytics_Page/Clustermap.md)).
