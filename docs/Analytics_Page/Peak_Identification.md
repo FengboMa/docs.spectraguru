@@ -42,10 +42,10 @@ The peak identification feature marks the most significant peaks in intensity fr
 
 ## Behavior
 
-- Peak identification: SpectraGuru uses SciPy's [`find_peaks`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.find_peaks.html) function to identify peaks. By default, the Peak Identification page selects the ] most prominent peaks to analyze, where ] is the preferred number of peaks (specified by the user). Otherwise, if the "Auto Peak Identification" toggle is turned off, the user is prompted to enter values for the required height, threshold, distance, prominence, and width. Each peak must satisfy all of these requirements to be listed in the statistics table.
+- Peak identification: SpectraGuru uses SciPy's [`find_peaks`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.find_peaks.html) function to identify peaks. By default, the Peak Identification page selects the `N` most prominent peaks to analyze, where `N` is the preferred number of peaks (specified by the user). Otherwise, if the "Auto Peak Identification" toggle is turned off, the user is prompted to enter values for the required height, threshold, distance, prominence, and width. Each peak must satisfy all of these requirements to be listed in the statistics table.
 - Statistics table: The identified peaks are displayed in a table at the bottom of the page, sorted by prominence. This table lists each peak's...
-    0. Raman frequency shift (]).
-    1. Peak intensity (]).
+    0. Raman frequency shift (${cm}^{-1}$).
+    1. Peak intensity ($a.u.$).
     2. Left and right threshold values.
     3. Prominence height.
     4. Left and right bases.
