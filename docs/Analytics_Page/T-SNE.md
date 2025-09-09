@@ -43,3 +43,11 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
 - Algorithm: SpectraGuru uses Scikit-learn's [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class to analyze your data. The algorithm for this analysis works as follows:
     0. Find the Euclidean distances between each pair of samples (see [hierarchically-clustered_heatmap](https://fengboma.github.io/docs.spectraguru/docs/Analytics_Page/Clustermap.md)).
+    1. For each sample ], test different values of ] until one is found that satisfies the perplexity formula ], where ], and the perplexity ] is chosen by the user. This is done using binary search.
+    2. For each sample ], use the corresponding ] to calculate the similarity ] between it and each other sample ].
+    3. Randomly project each sample onto a 2-dimensional space (called the *embedding space*) for visualization.
+    4. For each projected sample ]. find the t-distributed similarities ] between it and each other projected sample ].
+    5. After finding all the similarities ] and projected similarities ], treat both ] and ] as two probability distributions and compare them using Kullback-Leibler divergence. This results in a very high-dimensional function ].
+    6. Minimize ] by using gradient descent, where the embedding space varies. This will take multiple iterations, and each projected point ] as well as the new t-distribution ] will have to be updated after each iteration, meaning this process is somewhat computationally expensive. The process stops when either a minimum is found (i.e. the length of the gradient vector is close to `0`) or the maximum number of iterations is reached.
+    7. The output of this algorithm is the 2-dimensional embedding space (i.e the set of projected points ]) representing your data after the final iteration of gradient descent.
+- User control: The user controls both the perplexity and maximum number of iterations by adjusting the sliders located on the left sidebar. The perplexity ranges from `1` to `N-1`, where `N` is the number of samples. The maximum number of iterations ranges from `200` to `1000`.
