@@ -39,4 +39,4 @@ $$
 \sigma(x)=\sqrt{\frac{1}{N-1}\sum_{i=1}^N {\left(I_i(x)-\overline{I}(x)\right)}^2}
 $$
 
-    where $I_i(x)$ is the intensity of spectrum $i$ at Raman shift $x$ $[{cm}^{-1}]$, and $N$ is the total number of samples.
+> where $I_i(x)$ is the intensity of spectrum $i$ at Raman shift $x$ $[{cm}^{-1}]$, and $N$ is the total number of samples.

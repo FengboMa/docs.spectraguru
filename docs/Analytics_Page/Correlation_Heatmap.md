@@ -36,7 +36,7 @@ $$
 C_{i,j}=\frac{\sum_x \left(I_i(x)-\overline{I}_i\right)\left(I_j(x)-\overline{I}_j\right)}{\sqrt{\sum_x {\left(I_i(x)-\overline{I}_i\right)}^2}\times \sqrt{\sum_x {\left(I_j(x)-\overline{I}_j\right)}^2}}
 $$
 
-    where $I_i(x)$ is the intensity of the $i^{th}$ spectra at Raman shift $x$ and $\overline{i}_i$ is the average intensity of the $i^{th}$ spectra. The closer this value is to `1.0`, the greater the correlation between the corresponding spectra.
+> where $I_i(x)$ is the intensity of the $i^{th}$ spectra at Raman shift $x$ and $\overline{i}_i$ is the average intensity of the $i^{th}$ spectra. The closer this value is to `1.0`, the greater the correlation between the corresponding spectra.
 
 - Heatmap scale: The user can change the heatmap scale, which represents the range of expected correlation values. If the “Custom Heatmap scale” toggle is on, heatmap coloring will be based on the value of each correlation coefficient relative to the custom range.
 
