@@ -32,11 +32,11 @@ The correlation heatmap is another visualization tool used to show how closely o
 
 - Correlation values: For each pair of spectra (the average spectrum is also included), the Pearson Correlation Coefficient is calculated and displayed on the heatmap in a grid according to that pair of spectra. The average spectrum is represented by the final row and final column of the heatmap. SpectraGuru uses Pandas’ built-in correlation function [`pandas.DataFrame.corr`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html) to create the heatmap, which uses the Pearson Correlation Coefficient by default, which is defined by the covariance divided by the product of standard deviations. Mathematically, the coefficient $C_{i,j}$ between spectra $i$ and $j$ is determined as follows: 
 
-$$
-C_{i,j}=\frac{\sum_x \left(I_i(x)-\overline{I}_i\right)\left(I_j(x)-\overline{I}_j\right)}{\sqrt{\sum_x {\left(I_i(x)-\overline{I}_i\right)}^2}\times \sqrt{\sum_x {\left(I_j(x)-\overline{I}_j\right)}^2}}
-$$
+    $$
+    C_{i,j}=\frac{\sum_x \left(I_i(x)-\overline{I}_i\right)\left(I_j(x)-\overline{I}_j\right)}{\sqrt{\sum_x {\left(I_i(x)-\overline{I}_i\right)}^2}\times \sqrt{\sum_x {\left(I_j(x)-\overline{I}_j\right)}^2}}
+    $$
 
-> where $I_i(x)$ is the intensity of the $i^{th}$ spectra at Raman shift $x$ and $\overline{i}_i$ is the average intensity of the $i^{th}$ spectra. The closer this value is to `1.0`, the greater the correlation between the corresponding spectra.
+    where $I_i(x)$ is the intensity of the $i^{th}$ spectra at Raman shift $x$ and $\overline{i}_i$ is the average intensity of the $i^{th}$ spectra. The closer this value is to `1.0`, the greater the correlation between the corresponding spectra.
 
 - Heatmap scale: The user can change the heatmap scale, which represents the range of expected correlation values. If the “Custom Heatmap scale” toggle is on, heatmap coloring will be based on the value of each correlation coefficient relative to the custom range.
 
