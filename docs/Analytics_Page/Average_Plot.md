@@ -36,7 +36,7 @@ Average plot is a simple yet effective way to visualize processed data and detec
 - Standard deviation graph: If the “Show Standard Deviation” toggle is on, the standard deviation between all selected spectra is determined for each Raman shift value and plotted on a separate graph below the average plot graph. Mathematically speaking, the standard deviation graph $\sigma(x)$ is determined by the following equation: 
 
 $$
-\sigma(x)=\sqrt{\frac{1}{N-1}\sum_{i=1}^n {\left(I_i(x)-\overline{I}(x)\right)}^2}
+\sigma(x)=\sqrt{\frac{1}{N-1}\sum_{i=1}^N {\left(I_i(x)-\overline{I}(x)\right)}^2}
 $$
 
-where $I_i(x)$ is the intensity of spectrum $i$ at Raman shift $x$ $[{cm}^{-1}]$, and $N$ is the total number of samples.
+    where $I_i(x)$ is the intensity of spectrum $i$ at Raman shift $x$ $[{cm}^{-1}]$, and $N$ is the total number of samples.
