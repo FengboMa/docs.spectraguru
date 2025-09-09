@@ -42,7 +42,7 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 ## Behavior
 
 - Algorithm: SpectraGuru uses Scikit-learn's [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class to analyze your data. The algorithm for this analysis works as follows:
-    0. Find the Euclidean distances between each pair of samples (see [hierarchically-clustered_heatmap](https://fengboma.github.io/docs.spectraguru/docs/Analytics_Page/Clustermap.md)).
+    0. Find the Euclidean distances between each pair of samples (see [hierarchically-clustered_heatmap](https://fengboma.github.io/docs.spectraguru/docs/Analytics_Page/Clustermap/)).
     1. For each sample ], test different values of ] until one is found that satisfies the perplexity formula ], where ], and the perplexity ] is chosen by the user. This is done using binary search.
     2. For each sample ], use the corresponding ] to calculate the similarity ] between it and each other sample ].
     3. Randomly project each sample onto a 2-dimensional space (called the *embedding space*) for visualization.
