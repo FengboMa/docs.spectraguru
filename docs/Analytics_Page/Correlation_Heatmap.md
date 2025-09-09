@@ -30,7 +30,7 @@ The correlation heatmap is another visualization tool used to show how closely o
 
 ## Behavior
 
-- Correlation values: For each pair of spectra (the average spectrum is also included), the Pearson Correlation Coefficient is calculated and displayed on the heatmap in a grid according to that pair of spectra. The average spectrum is represented by the final row and final column of the heatmap. SpectraGuru uses Pandas’ built-in correlation function [`pandas.DataFrame.corr`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html) to create the heatmap, which uses the Pearson Correlation Coefficient by default, which is defined by the covariance divided by the product of standard deviations. Mathematically, the coefficient $C_{i,j}$ between spectra $i$ and $j$ is determined as follows: 
+- Correlation values: For each pair of spectra (the average spectrum is also included), the Pearson Correlation Coefficient is calculated and displayed on the heatmap in a grid according to that pair of spectra. The average spectrum is represented by the final row and final column of the heatmap. SpectraGuru uses Pandas’ built-in correlation function [`pandas.DataFrame.corr`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html) to create the heatmap, which uses the Pearson Correlation Coefficient by default, which is defined by the covariance divided by the product of standard deviations. Mathematically, the coefficient $C_{i,j}$ between spectra $i$ and $j$ is determined as follows:
 
     $$
     C_{i,j}=\frac{\sum_x \left(I_i(x)-\overline{I}_i\right)\left(I_j(x)-\overline{I}_j\right)}{\sqrt{\sum_x {\left(I_i(x)-\overline{I}_i\right)}^2}\times \sqrt{\sum_x {\left(I_j(x)-\overline{I}_j\right)}^2}}
