@@ -20,11 +20,11 @@ nav_order: 2
 
 ## Introduction
 
-The Despike function, sometimes being referred as spike removal, is an essential tool in the application designed to automatically detect and remove spikes in spectral data, which are often caused by noise or transient artifacts during data acquisition (Cosmic ray spike can also be removed with this function.) 
+The Despike function, sometimes referred to as spike removal, is an essential tool in the application designed to automatically detect and remove spikes in spectral data, which are often caused by noise or transient artifacts during data acquisition (Cosmic ray spikes can also be removed with this function.) 
 
 ## How to use:
 
-To remove spikes you data:
+To remove spikes in your data:
 
 0. Upload data and select spectra you want to process.
 1. Navigate to sidebar, and turn on Despike toggle.
