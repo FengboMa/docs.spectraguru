@@ -74,3 +74,11 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
     6. Minimize $D_{KL}(s || t)$ by using gradient descent, where the embedding space varies. This will take multiple iterations, and each projected point $Q$ as well as the new t-distribution $t(i, j)$ will have to be updated after each iteration, meaning this process is somewhat computationally expensive. The process stops when either a minimum is found (i.e. the length of the gradient vector is close to `0`) or the maximum number of iterations is reached.
     7. The output of this algorithm is the 2-dimensional embedding space (i.e the set of projected points $Q$) representing your data after the final iteration of gradient descent.
 - User control: The user controls both the perplexity and maximum number of iterations by adjusting the sliders located on the left sidebar. The perplexity ranges from `1` to `N-1`, where `N` is the number of samples. The maximum number of iterations ranges from `200` to `1000`.
+
+## References
+
+SpectraGuru uses the [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class from Scikit-learn to perform dimensionality reduction.
+
+1. Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... Duchesnay, É. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 12, 2825–2830.
+
+2. van der Maaten, L., & Hinton, G. (2008). *Visualizing Data using t-SNE*. Journal of Machine Learning Research, 9, 2579–2605. https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf
