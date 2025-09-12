@@ -55,7 +55,7 @@ Hierarchical clustering seeks to group samples based on their similarity to each
 
 ## References
 
-SpectraGuru uses Seaborn's [`clustermap`](https://seaborn.pydata.org/generated/seaborn.clustermap.html) function to visualize hierarchically-clustered data. Ward's method is implemented by Scipy's [`linkage`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html#scipy.cluster.hierarchy.linkage) function.
+SpectraGuru uses Seaborn's [`seaborn.clustermap`](https://seaborn.pydata.org/generated/seaborn.clustermap.html) function to visualize hierarchically-clustered data. Ward's method is implemented by Scipy's [`cluster.hierarchy.linkage`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html#scipy.cluster.hierarchy.linkage) function.
 
 1. Waskom, M. L. (2021). Seaborn: statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
 
