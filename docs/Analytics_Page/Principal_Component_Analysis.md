@@ -55,3 +55,11 @@ Principal Component Analysis (PCA) is a way of boiling your data down to a small
 
     where $s^2(X)$ is the variance of data set $X$, $X$ is the original data, and ${proj}_{P_i}(X)$ is the projection of $X$ onto the singular vector of $P_i$.
 - Loading scores: A graph of the loadings for the first three principal components is displayed below the plot of the cumulative explained variance. The horizontal axis represents the original features (each Raman shift value), and the vertical axis represents the loading score.
+
+## References
+
+SpectraGuru uses the [`PCA`](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) class from Scikit-learn to find principal components.
+
+1. Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... Duchesnay, É. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 12, 2825–2830.
+
+2. Halko, N., Martinsson, P. G., & Tropp, J. A. (2011). Finding structure with randomness: Probabilistic algorithms for constructing approximate matrix decompositions. SIAM Review, 53(2), 217–288. https://doi.org/10.1137/090771806
