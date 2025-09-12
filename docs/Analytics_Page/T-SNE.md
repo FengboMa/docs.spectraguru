@@ -35,9 +35,11 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 - A *Gaussian distribution* is a probability distribution also known as a normal distribution or a "bell curve," expressed mathematically as $e^{-t^2/(2\sigma^2)}$, where $\sigma$ is the standard deviation of the distribution.
 - The *scaled similarity* between a sample $A_i$ and another sample $A_j$ is based on the normalized Gaussian distribution of their distance compared to all other points, defined by:
     
+    {% raw %}
     $$
     s(i, j)=\frac{e^{-{||A_i-A_j||}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{||A_i-A_k||}^2/(2{{\sigma}_i}^2)}\right)}
     $$
+    {% endraw %}
 
     where ${\sigma}_i$ is the standard deviation for sample $A_i$, selected to universalize the *perplexity* chosen by the user (see the next paragraph on perplexity).
 - *Perplexity* is a measure of the size of clusters in a data set. Data sets with large clusters have higher perplexity, while data sets with small, numerous clusters have lower perplexity. However, perplexity is a little subjective and is never calculated explicitly. Its value is guessed by the user (values between `5` and `50` typically yield the best results) and then used to determine the standard deviations for each point’s Gaussian distribution using the following formula: 
@@ -66,7 +68,7 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
 - Algorithm: SpectraGuru uses Scikit-learn's [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class to analyze your data. The algorithm for this analysis works as follows:
     0. Find the Euclidean distances between each pair of samples.
-    1. For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula $P=2^{-\sum_{j \neq i} s(i, j){log}_2 s(i, j)}$, where $s(i, j)=\frac{e^{-{||A_i-A_j||}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{||A_i-A_k||}^2/(2{{\sigma}_i}^2)}\right)}$, and the perplexity $P$ is chosen by the user. This is done using binary search.
+    1. For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula {% raw %}$P=2^{-\sum_{j \neq i} s(i, j){log}_2 s(i, j)}${% endraw %}, where {% raw %}$s(i, j)=\frac{e^{-{||A_i-A_j||}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{||A_i-A_k||}^2/(2{{\sigma}_i}^2)}\right)}${% endraw %}, and the perplexity $P$ is chosen by the user. This is done using binary search.
     2. For each sample $A_i$, use the corresponding ${\sigma}_i$ to calculate the similarities $s(i, j)$ between it and each other sample $A_j$.
     3. Randomly project each sample onto a 2-dimensional space (called the *embedding space*) for visualization.
     4. For each projected sample $Q_i$. find the t-distributed similarities $t(i, j)$ between it and each other projected sample $Q_j$.
