@@ -51,9 +51,11 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
     where $P$ is the perplexity, and s(i, j) is the scaled similarity between samples $A_i$ and $A_j$. This formula is used to solve for the standard deviation ${\sigma}_i$ of the Gaussian distribution around $A_i$ that satisfies the equation. A low perplexity should be chosen if the user wants data to be grouped into fine categories, and a higher perplexity should be chosen for broader categories.
 - *T-distributed similarity* is like the standard similarity, but instead of using a Gaussian distribution, a *Student's t-distribution* is used. The t-distribution used by this algorithm is expressed as $\frac{1}{1+t^2}$, and it looks like a shorter version of the Gaussian bell curve with higher edges. The t-distributed similarity $t(i, j)$ between two samples $Q_i$ and $Q_j$ is defined as:
 
+    {% raw %}
     $$
     t(i, j)=\frac{{\left(1+{||Q_i-Q_j||}^2\right)}^{-1}}{\sum_{k \neq i} {\left(1+{||Q_i-Q_k||}^2\right)}^{-1}}
     $$
+    {% endraw %}
 
 - *Kullback-Leibler divergence* is a way of measuring how much two probability distributions differ. By treating the similarity values of the true data and projected data as probability distributions, we can use Kullback-Leibler divergence to quantify how accurate the current model is. You can think of the “probabilities” corresponding to the similarity values as the probabilities of two points being part of the same cluster. Kullback-Leibler divergence is denoted by $D_{KL}(P || Q)$ and is defined by:
     
