@@ -1,0 +1,23 @@
+{% assign math = page.math | default: layout.math | default: site.math %}
+{% if math == "katex" %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$", right: "$", display: false},
+          {left: "$$", right: "$$", display: true},
+          {left: "\\[", right: "\\]", display: true},
+          {left: "\\(", right: "\\)", display: false}
+        ],
+        ignoredTags: ["script","noscript","style","textarea","pre","code"],
+        throwOnError: false,
+        trust: true
+      });
+    });
+  </script>
+{% elsif math == "mathjax" %}
+  <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+{% endif %}
