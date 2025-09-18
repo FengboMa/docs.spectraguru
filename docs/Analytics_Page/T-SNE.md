@@ -31,13 +31,13 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
 ## Definitions
 
-- $\left|\left|A-B\right|\right|$ denotes the *Euclidean distance* between samples $A$ and $B$ (see the [hierarchically-clustered heatmap](https://fengboma.github.io/docs.spectraguru/docs/Analytics_Page/Clustermap/) documentation for how Euclidean distance is defined)
+- $\lvert\lvert A-B\rvert\rvert|$ denotes the *Euclidean distance* between samples $A$ and $B$ (see the [hierarchically-clustered heatmap](https://fengboma.github.io/docs.spectraguru/docs/Analytics_Page/Clustermap/) documentation for how Euclidean distance is defined)
 - A *Gaussian distribution* is a probability distribution also known as a normal distribution or a "bell curve," expressed mathematically as $e^{-t^2/(2\sigma^2)}$, where $\sigma$ is the standard deviation of the distribution.
 - The *scaled similarity* between a sample $A_i$ and another sample $A_j$ is based on the normalized Gaussian distribution of their distance compared to all other points, defined by:
     
     {% raw %}
     $$
-    s(i, j)=\frac{e^{-{\left|\left|A_i-A_j\right|\right|}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\left|\left|A_i-A_k\right|\right|}^2/(2{{\sigma}_i}^2)}\right)}
+    s(i, j)=\frac{e^{-{\lvert\lvert A_i-A_j\rvert\rvert}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\lvert\lvert A_i-A_k\rvert\rvert}^2/(2{{\sigma}_i}^2)}\right)}
     $$
     {% endraw %}
 
@@ -53,7 +53,7 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
     {% raw %}
     $$
-    t(i, j)=\frac{{\left(1+{\left|\left|Q_i-Q_j\right|\right|}^2\right)}^{-1}}{\sum_{k \neq i} {\left(1+{\left|\left|Q_i-Q_k\right|\right|}^2\right)}^{-1}}
+    t(i, j)=\frac{{\left(1+{\lvert\lvert Q_i-Q_j\rvert\rvert}^2\right)}^{-1}}{\sum_{k \neq i} {\left(1+{\lvert\lvert Q_i-Q_k\rvert\rvert}^2\right)}^{-1}}
     $$
     {% endraw %}
 
@@ -72,7 +72,7 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
 - Algorithm: SpectraGuru uses Scikit-learn's [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class to analyze your data. The algorithm for this analysis works as follows:
     0. Find the Euclidean distances between each pair of samples.
-    1. For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula $P=2^{-\sum_{j \neq i} s(i, j){log}_2 s(i, j)}$, where $s(i, j)=\frac{e^{-{\left|\left|A_i-A_j\right|\right|}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\left|\left|A_i-A_k\right|\right|}^2/(2{{\sigma}_i}^2)}\right)}$, and the perplexity $P$ is chosen by the user. This is done using binary search.
+    1. For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula $P=2^{-\sum_{j \neq i} s(i, j){log}_2 s(i, j)}$, where $s(i, j)=\frac{e^{-{\lvert\lvert A_i-A_j\rvert\rvert}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\lvert\lvert A_i-A_k\rvert\rvert}^2/(2{{\sigma}_i}^2)}\right)}$, and the perplexity $P$ is chosen by the user. This is done using binary search.
     2. For each sample $A_i$, use the corresponding ${\sigma}_i$ to calculate the similarities $s(i, j)$ between it and each other sample $A_j$.
     3. Randomly project each sample onto a 2-dimensional space (called the *embedding space*) for visualization.
     4. For each projected sample $Q_i$. find the t-distributed similarities $t(i, j)$ between it and each other projected sample $Q_j$.
