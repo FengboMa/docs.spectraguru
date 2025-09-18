@@ -41,14 +41,14 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
     $$
     {% endraw %}
 
-    where ${\sigma}_i$ is the standard deviation for sample $A_i$, selected to universalize the *perplexity* chosen by the user (see the next paragraph on perplexity).
+    where $\sigma_i$ is the standard deviation for sample $A_i$, selected to universalize the *perplexity* chosen by the user (see the next paragraph on perplexity).
 - *Perplexity* is a measure of the size of clusters in a data set. Data sets with large clusters have higher perplexity, while data sets with small, numerous clusters have lower perplexity. However, perplexity is a little subjective and is never calculated explicitly. Its value is guessed by the user (values between `5` and `50` typically yield the best results) and then used to determine the standard deviations for each point’s Gaussian distribution using the following formula: 
 
     $$
     P=2^{-\sum_{j \neq i} s(i, j)\log_2 s(i, j)}
     $$
 
-    where $P$ is the perplexity, and s(i, j) is the scaled similarity between samples $A_i$ and $A_j$. This formula is used to solve for the standard deviation ${\sigma}_i$ of the Gaussian distribution around $A_i$ that satisfies the equation. A low perplexity should be chosen if the user wants data to be grouped into fine categories, and a higher perplexity should be chosen for broader categories.
+    where $P$ is the perplexity, and s(i, j) is the scaled similarity between samples $A_i$ and $A_j$. This formula is used to solve for the standard deviation $\sigma_i$ of the Gaussian distribution around $A_i$ that satisfies the equation. A low perplexity should be chosen if the user wants data to be grouped into fine categories, and a higher perplexity should be chosen for broader categories.
 - *T-distributed similarity* is like the standard similarity, but instead of using a Gaussian distribution, a *Student's t-distribution* is used. The t-distribution used by this algorithm is expressed as $\frac{1}{1+t^2}$, and it looks like a shorter version of the Gaussian bell curve with higher edges. The t-distributed similarity $t(i, j)$ between two samples $Q_i$ and $Q_j$ is defined as:
 
     {% raw %}
@@ -73,9 +73,9 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 - Algorithm: SpectraGuru uses Scikit-learn's [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class to analyze your data. The algorithm for this analysis works as follows:
     0. Find the Euclidean distances between each pair of samples.
     {% raw %}
-    1. For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula $P=2^{-\sum_{j \neq i} s(i, j)\log_2 s(i, j)}$, where $s(i, j)=\frac{e^{-{\lvert\lvert A_i-A_j\rvert\rvert}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\lvert\lvert A_i-A_k\rvert\rvert}^2/(2{{\sigma}_i}^2)}\right)}$, and the perplexity $P$ is chosen by the user. This is done using binary search.
+    1. For each sample $A_i$, test different values of $\sigma_i$ until one is found that satisfies the perplexity formula $P=2^{-\sum_{j \neq i} s(i, j)\log_2 s(i, j)}$, where $s(i, j)=\frac{e^{-{\lvert\lvert A_i-A_j\rvert\rvert}^2/(2{\sigma_i}^2)}}{\sum_{k \neq i} \left(e^{-{\lvert\lvert A_i-A_k\rvert\rvert}^2/(2{\sigma_i}^2)}\right)}$, and the perplexity $P$ is chosen by the user. This is done using binary search.
     {% endraw %}
-    2. For each sample $A_i$, use the corresponding ${\sigma}_i$ to calculate the similarities $s(i, j)$ between it and each other sample $A_j$.
+    2. For each sample $A_i$, use the corresponding $\sigma_i$ to calculate the similarities $s(i, j)$ between it and each other sample $A_j$.
     3. Randomly project each sample onto a 2-dimensional space (called the *embedding space*) for visualization.
     4. For each projected sample $Q_i$. find the t-distributed similarities $t(i, j)$ between it and each other projected sample $Q_j$.
     5. After finding all the similarities $s(i, j)$ and projected similarities $t(i, j)$, treat $s$ and $t$ as two probability distributions and compare them using Kullback-Leibler divergence. This results in a very high-dimensional function $D_{KL}(s \vert\vert t)$.
