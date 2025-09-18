@@ -72,7 +72,9 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
 - Algorithm: SpectraGuru uses Scikit-learn's [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class to analyze your data. The algorithm for this analysis works as follows:
     0. Find the Euclidean distances between each pair of samples.
-    1. {% raw %}For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula $P=2^{-\sum_{j \neq i} s(i, j)\log_2 s(i, j)}$, where $s(i, j)=\frac{e^{-{\lvert\lvert A_i-A_j\rvert\rvert}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\lvert\lvert A_i-A_k\rvert\rvert}^2/(2{{\sigma}_i}^2)}\right)}$, and the perplexity $P$ is chosen by the user. This is done using binary search.{% endraw %}
+    {% raw %}
+    1. For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula $P=2^{-\sum_{j \neq i} s(i, j)\log_2 s(i, j)}$, where $s(i, j)=\frac{e^{-{\lvert\lvert A_i-A_j\rvert\rvert}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\lvert\lvert A_i-A_k\rvert\rvert}^2/(2{{\sigma}_i}^2)}\right)}$, and the perplexity $P$ is chosen by the user. This is done using binary search.
+    {% endraw %}
     2. For each sample $A_i$, use the corresponding ${\sigma}_i$ to calculate the similarities $s(i, j)$ between it and each other sample $A_j$.
     3. Randomly project each sample onto a 2-dimensional space (called the *embedding space*) for visualization.
     4. For each projected sample $Q_i$. find the t-distributed similarities $t(i, j)$ between it and each other projected sample $Q_j$.
