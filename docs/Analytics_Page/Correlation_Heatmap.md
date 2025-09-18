@@ -41,3 +41,11 @@ The correlation heatmap is another visualization tool used to show how closely o
 - Heatmap scale: The user can change the heatmap scale, which represents the range of expected correlation values. If the “Custom Heatmap scale” toggle is on, heatmap coloring will be based on the value of each correlation coefficient relative to the custom range.
 
 - Display: Each correlation value is displayed on a square grid with side length `N+1`, where `N` is the number of selected spectra (the extra grid space comes from the average spectrum). If the grid size is greater than `10`, the numerical values of the correlation coefficients will not be displayed in order to avoid clutter. The color of each grid space ranges from light yellow to dark red, where darker, redder colors represent high correlation values.
+
+## References
+
+SpectraGuru uses Pandas' implementation for correlation: [`pandas.DataFrame.corr`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html)
+
+1. The pandas development team. (2020). pandas-dev/pandas: Pandas (Version latest). Zenodo. https://doi.org/10.5281/zenodo.3509134
+
+2. McKinney, W. (2010). Data Structures for Statistical Computing in Python. In S. van der Walt & J. Millman (Eds.), Proceedings of the 9th Python in Science Conference (pp. 51–56). https://doi.org/10.25080/Majora-92bf1922-00a

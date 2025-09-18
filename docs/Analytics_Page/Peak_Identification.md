@@ -42,7 +42,7 @@ The peak identification feature marks the most significant peaks in intensity fr
 
 ## Behavior
 
-- Peak identification: SpectraGuru uses SciPy's [`find_peaks`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.find_peaks.html) function to identify peaks. By default, the Peak Identification page selects the `N` most prominent peaks to analyze, where `N` is the preferred number of peaks (specified by the user). Otherwise, if the "Auto Peak Identification" toggle is turned off, the user is prompted to enter values for the required height, threshold, distance, prominence, and width. Each peak must satisfy all of these requirements to be listed in the statistics table.
+- Peak identification: SpectraGuru uses SciPy's [`signal.find_peaks`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.find_peaks.html) function to identify peaks. By default, the Peak Identification page selects the `N` most prominent peaks to analyze, where `N` is the preferred number of peaks (specified by the user). Otherwise, if the "Auto Peak Identification" toggle is turned off, the user is prompted to enter values for the required height, threshold, distance, prominence, and width. Each peak must satisfy all of these requirements to be listed in the statistics table.
 - Statistics table: The identified peaks are displayed in a table at the bottom of the page, sorted by prominence. This table lists each peak's...
     0. Raman frequency shift (${cm}^{-1}$).
     1. Peak intensity ($a.u.$).
@@ -52,4 +52,8 @@ The peak identification feature marks the most significant peaks in intensity fr
     5. Width.
     6. Width height (the height at which half the prominence height is lost).
 
+## References
 
+SpectraGuru uses Scipy's peak identification function, [`signal.find_peaks`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.find_peaks.html).
+
+1. Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., ... SciPy 1.0 Contributors. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. Nature Methods, 17(3), 261–272. https://doi.org/10.1038/s41592-019-0686-2

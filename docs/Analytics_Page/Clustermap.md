@@ -52,3 +52,13 @@ Hierarchical clustering seeks to group samples based on their similarity to each
     2. After finding the new distances, the two groups with the smallest distance are again chosen to be merged, and the distances are updated again using the formula above. This process repeats until all samples are combined into a single group.
 - Colored heatmap: If the “Show clustered heatmap” toggle is turned on, a heatmap of the data is displayed such that each sample is laid out side by side, and the vertical axis represents Raman shift (lower frequencies towards the top). Intensities are visualized using color. The samples are ordered such that they appear next to samples they are similar to. Above the plot, a dendrogram is drawn that shows how each sample was merged into groups with each other.
 - Dendrogram view: If the “Show clustered heatmap” toggle is turned off, the dendrogram created during clustering is enlarged, and the Ward distances at each step are plotted on the vertical axis. The “Ward distance” refers to the distance between the two merged groups at each step. Large jumps in the Ward distance from one step to another indicate that the two merged groups were not very similar to each other. Likewise, smaller jumps in the Ward distance indicate that the two groups were relatively similar.
+
+## References
+
+SpectraGuru uses Seaborn's [`seaborn.clustermap`](https://seaborn.pydata.org/generated/seaborn.clustermap.html) function to visualize hierarchically-clustered data. Ward's method is implemented by Scipy's [`cluster.hierarchy.linkage`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html#scipy.cluster.hierarchy.linkage) function.
+
+1. Waskom, M. L. (2021). Seaborn: statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
+
+2. Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., ... SciPy 1.0 Contributors. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. Nature Methods, 17(3), 261–272. https://doi.org/10.1038/s41592-019-0686-2
+
+3. Ward, J. H. Jr. (1963). Hierarchical grouping to optimize an objective function. Journal of the American Statistical Association, 58(301), 236–244. https://doi.org/10.1080/01621459.1963.10500845
