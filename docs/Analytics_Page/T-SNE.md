@@ -31,13 +31,13 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
 ## Definitions
 
-- <span>>$||A-B||$</span> denotes the *Euclidean distance* between samples $A$ and $B$ (see the [hierarchically-clustered heatmap](https://fengboma.github.io/docs.spectraguru/docs/Analytics_Page/Clustermap/) documentation for how Euclidean distance is defined)
+- $\left|\left|A-B\right|\right|$ denotes the *Euclidean distance* between samples $A$ and $B$ (see the [hierarchically-clustered heatmap](https://fengboma.github.io/docs.spectraguru/docs/Analytics_Page/Clustermap/) documentation for how Euclidean distance is defined)
 - A *Gaussian distribution* is a probability distribution also known as a normal distribution or a "bell curve," expressed mathematically as $e^{-t^2/(2\sigma^2)}$, where $\sigma$ is the standard deviation of the distribution.
 - The *scaled similarity* between a sample $A_i$ and another sample $A_j$ is based on the normalized Gaussian distribution of their distance compared to all other points, defined by:
     
     {% raw %}
     $$
-    s(i, j)=\frac{e^{-{||A_i-A_j||}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{||A_i-A_k||}^2/(2{{\sigma}_i}^2)}\right)}
+    s(i, j)=\frac{e^{-{\left|\left|A_i-A_j\right|\right|}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\left|\left|A_i-A_k\right|\right|}^2/(2{{\sigma}_i}^2)}\right)}
     $$
     {% endraw %}
 
@@ -53,15 +53,15 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
     {% raw %}
     $$
-    t(i, j)=\frac{{\left(1+{||Q_i-Q_j||}^2\right)}^{-1}}{\sum_{k \neq i} {\left(1+{||Q_i-Q_k||}^2\right)}^{-1}}
+    t(i, j)=\frac{{\left(1+{\left|\left|Q_i-Q_j\right|\right|}^2\right)}^{-1}}{\sum_{k \neq i} {\left(1+{\left|\left|Q_i-Q_k\right|\right|}^2\right)}^{-1}}
     $$
     {% endraw %}
 
-- *Kullback-Leibler divergence* is a way of measuring how much two probability distributions differ. By treating the similarity values of the true data and projected data as probability distributions, we can use Kullback-Leibler divergence to quantify how accurate the current model is. You can think of the “probabilities” corresponding to the similarity values as the probabilities of two points being part of the same cluster. Kullback-Leibler divergence is denoted by <span>>$D_{KL}(P || Q)$</span> and is defined by:
+- *Kullback-Leibler divergence* is a way of measuring how much two probability distributions differ. By treating the similarity values of the true data and projected data as probability distributions, we can use Kullback-Leibler divergence to quantify how accurate the current model is. You can think of the “probabilities” corresponding to the similarity values as the probabilities of two points being part of the same cluster. Kullback-Leibler divergence is denoted by $D_{KL}(P \vert\vert Q)$</span> and is defined by:
     
     {% raw %}
     $$
-    D_{KL}(P || Q)=\sum_{x}P(x)log\left(\frac{P(x)}{Q(x)}\right)
+    D_{KL}(P \vert\vert Q)=\sum_{x}P(x)log\left(\frac{P(x)}{Q(x)}\right)
     $$
     {% endraw %}
 
@@ -72,12 +72,12 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
 - Algorithm: SpectraGuru uses Scikit-learn's [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class to analyze your data. The algorithm for this analysis works as follows:
     0. Find the Euclidean distances between each pair of samples.
-    1. For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula <span>$P=2^{-\sum_{j \neq i} s(i, j){log}_2 s(i, j)}$</span>, where <span>$s(i, j)=\frac{e^{-{||A_i-A_j||}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{||A_i-A_k||}^2/(2{{\sigma}_i}^2)}\right)}$</span>, and the perplexity $P$ is chosen by the user. This is done using binary search.
+    1. For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula $P=2^{-\sum_{j \neq i} s(i, j){log}_2 s(i, j)}$, where $s(i, j)=\frac{e^{-{\left|\left|A_i-A_j\right|\right|}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\left|\left|A_i-A_k\right|\right|}^2/(2{{\sigma}_i}^2)}\right)}$, and the perplexity $P$ is chosen by the user. This is done using binary search.
     2. For each sample $A_i$, use the corresponding ${\sigma}_i$ to calculate the similarities $s(i, j)$ between it and each other sample $A_j$.
     3. Randomly project each sample onto a 2-dimensional space (called the *embedding space*) for visualization.
     4. For each projected sample $Q_i$. find the t-distributed similarities $t(i, j)$ between it and each other projected sample $Q_j$.
-    5. After finding all the similarities $s(i, j)$ and projected similarities $t(i, j)$, treat $s$ and $t$ as two probability distributions and compare them using Kullback-Leibler divergence. This results in a very high-dimensional function <span>$D_{KL}(s || t)$</span>.
-    6. Minimize <span>$D_{KL}(s || t)$</span> by using gradient descent, where the embedding space varies. This will take multiple iterations, and each projected point $Q$ as well as the new t-distribution $t(i, j)$ will have to be updated after each iteration, meaning this process is somewhat computationally expensive. The process stops when either a minimum is found (i.e. the length of the gradient vector is close to `0`) or the maximum number of iterations is reached.
+    5. After finding all the similarities $s(i, j)$ and projected similarities $t(i, j)$, treat $s$ and $t$ as two probability distributions and compare them using Kullback-Leibler divergence. This results in a very high-dimensional function $D_{KL}(s \vert\vert t)$.
+    6. Minimize $D_{KL}(s \vert\vert t)$ by using gradient descent, where the embedding space varies. This will take multiple iterations, and each projected point $Q$ as well as the new t-distribution $t(i, j)$ will have to be updated after each iteration, meaning this process is somewhat computationally expensive. The process stops when either a minimum is found (i.e. the length of the gradient vector is close to `0`) or the maximum number of iterations is reached.
     7. The output of this algorithm is the 2-dimensional embedding space (i.e the set of projected points $Q$) representing your data after the final iteration of gradient descent.
 - User control: The user controls both the perplexity and maximum number of iterations by adjusting the sliders located on the left sidebar. The perplexity ranges from `1` to `N-1`, where `N` is the number of samples. The maximum number of iterations ranges from `200` to `1000`.
 
