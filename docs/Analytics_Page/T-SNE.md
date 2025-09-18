@@ -57,7 +57,7 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
     $$
     {% endraw %}
 
-- *Kullback-Leibler divergence* is a way of measuring how much two probability distributions differ. By treating the similarity values of the true data and projected data as probability distributions, we can use Kullback-Leibler divergence to quantify how accurate the current model is. You can think of the “probabilities” corresponding to the similarity values as the probabilities of two points being part of the same cluster. Kullback-Leibler divergence is denoted by $D_{KL}(P \vert\vert Q)$</span> and is defined by:
+- *Kullback-Leibler divergence* is a way of measuring how much two probability distributions differ. By treating the similarity values of the true data and projected data as probability distributions, we can use Kullback-Leibler divergence to quantify how accurate the current model is. You can think of the “probabilities” corresponding to the similarity values as the probabilities of two points being part of the same cluster. Kullback-Leibler divergence is denoted by $D_{KL}(P \vert\vert Q)$ and is defined by:
     
     {% raw %}
     $$
@@ -72,7 +72,7 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
 - Algorithm: SpectraGuru uses Scikit-learn's [`TSNE`](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) class to analyze your data. The algorithm for this analysis works as follows:
     0. Find the Euclidean distances between each pair of samples.
-    1. For each sample $A_i$, test different values of {% raw %}${\sigma}_i${% endraw %} until one is found that satisfies the perplexity formula {% raw %}$P=2^{-\sum_{j \neq i} s(i, j){log}_2 s(i, j)}${% endraw %}, where {% raw %}$s(i, j)=\frac{e^{-{\lvert\lvert A_i-A_j\rvert\rvert}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\lvert\lvert A_i-A_k\rvert\rvert}^2/(2{{\sigma}_i}^2)}\right)}${% endraw %}, and the perplexity $P$ is chosen by the user. This is done using binary search.
+    1. For each sample $A_i$, test different values of ${\sigma}_i$ until one is found that satisfies the perplexity formula {% raw %}$P=2^{-\sum_{j \neq i} s(i, j){log}_2 s(i, j)}${% endraw %}, where {% raw %}$s(i, j)=\frac{e^{-{\lvert\lvert A_i-A_j\rvert\rvert}^2/(2{{\sigma}_i}^2)}}{\sum_{k \neq i} \left(e^{-{\lvert\lvert A_i-A_k\rvert\rvert}^2/(2{{\sigma}_i}^2)}\right)}${% endraw %}, and the perplexity $P$ is chosen by the user. This is done using binary search.
     2. For each sample $A_i$, use the corresponding ${\sigma}_i$ to calculate the similarities $s(i, j)$ between it and each other sample $A_j$.
     3. Randomly project each sample onto a 2-dimensional space (called the *embedding space*) for visualization.
     4. For each projected sample $Q_i$. find the t-distributed similarities $t(i, j)$ between it and each other projected sample $Q_j$.
