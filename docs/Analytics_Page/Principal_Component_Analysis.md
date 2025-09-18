@@ -28,7 +28,7 @@ Principal Component Analysis (PCA) is a way of boiling your data down to a small
 - *Variance* quantifies how far, on average, a set of data deviates from its mean. Mathematically, the variance $s^2$ of a collection of points $x$ is defined by:
 
     $$
-    s^2=\frac{\sum_{i=1}^n {|x_i-\bar{x}|}^2}{n-1}
+    s^2=\frac{1}{n-1} \sum_{i=1}^n {|x_i-\bar{x}|}^2
     $$
 
     where $n$ is the number of data points in $x$, and $\bar{x}$ is the mean of the data.
