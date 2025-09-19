@@ -45,10 +45,10 @@ Hierarchical clustering seeks to group samples based on their similarity to each
     1. For the next iteration, Ward's method merges the two samples with the least distance between them into a single group $u$, and then updates that group's distance to each other sample using the following formula:
 
         $$
-        D(u, v)=\sqrt{\frac{|v|+|s|}{T} {D(v, s)}^2 + \frac{|v|+|t|}{T} {D(v, t)}^2 - \frac{|v|}{T} {D(s, t)}^2}
+        D(u, v)=\sqrt{\frac{\lvert v\rvert+\lvert s\rvert}{T} {D(v, s)}^2 + \frac{\lvert v\rvert+\lvert t\rvert}{T} {D(v, t)}^2 - \frac{\lvert v\rvert}{T} {D(s, t)}^2}
         $$
     
-        where $u$ is the newly formed group, $s$ and $t$ are the two groups that merged to form $u$, and $v$ is any other group. $D(x, y)$ is the Ward distance between groups $x$ and $y$ (this is just the Euclidean distance if the groups are still single samples), $|x|$ is the number of samples in group $x$, and $T=|v|+|s|+|t|$.
+        where $u$ is the newly formed group, $s$ and $t$ are the two groups that merged to form $u$, and $v$ is any other group. $D(x, y)$ is the Ward distance between groups $x$ and $y$ (this is just the Euclidean distance if the groups are still single samples), $\lvert x\rvert$ is the number of samples in group $x$, and $T=\lvert v\rvert+\lvert s\rvert+\lvert t\rvert$.
     2. After finding the new distances, the two groups with the smallest distance are again chosen to be merged, and the distances are updated again using the formula above. This process repeats until all samples are combined into a single group.
 - Colored heatmap: If the “Show clustered heatmap” toggle is turned on, a heatmap of the data is displayed such that each sample is laid out side by side, and the vertical axis represents Raman shift (lower frequencies towards the top). Intensities are visualized using color. The samples are ordered such that they appear next to samples they are similar to. Above the plot, a dendrogram is drawn that shows how each sample was merged into groups with each other.
 - Dendrogram view: If the “Show clustered heatmap” toggle is turned off, the dendrogram created during clustering is enlarged, and the Ward distances at each step are plotted on the vertical axis. The “Ward distance” refers to the distance between the two merged groups at each step. Large jumps in the Ward distance from one step to another indicate that the two merged groups were not very similar to each other. Likewise, smaller jumps in the Ward distance indicate that the two groups were relatively similar.
