@@ -23,9 +23,9 @@ Overview of the processing features on this page.
 
 | Feature             | Sub Functions                                      | More Info |
 |---------------------|---------------------------------------------------|-----------|
-| Interpolation       |               | [Interpolation](docs/Processing_Page/Processing_Feature/Interpolation/)          |
+| Interpolation       |               | [Interpolation](Processing_Feature/Interpolation/)          |
 | Cropping            |                       |           |
-| Despiking           | Despike with Threshold, Zap Length                      | [Despiking](docs/Processing_Page/Processing_Feature/Despike/)          |
+| Despiking           | Despike with Threshold, Zap Length                      | [Despiking](Processing_Feature/Despike/)          |
 | Smoothening         | Savitzky-Golay Filter, 1D Fast Fourier Transform    |           |
 | Baseline Removal    | airPLS, ModPoly                                    |           |
 | Normalization       | Normalize by Area, Normalize by Peak, Min Max Normalize |      |
