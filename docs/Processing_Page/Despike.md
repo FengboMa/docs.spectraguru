@@ -42,7 +42,7 @@ The expected behavior of the Despike function is to scan each spectrum for abrup
 
 ## Method
 
-For each spectrum in the dataset, the function iterates through the data using a sliding window approach defined by the `zap_length` parameter. Within each window, the function calculates the difference between the observed intensity values and a linearly interpolated line drawn across the window. This difference is known as the residual, denoted as \( \text{resid} \). If any residual value exceeds a predefined threshold, it is considered indicative of a spike. The function then corrects the spike by replacing the affected intensity values with the corresponding values from the interpolated line, ensuring a smooth transition across the window. The mathematical formulation for this process is as follows:
+For each spectrum in the dataset, the function iterates through the data using a sliding window approach defined by the `zap_length` parameter. Within each window, the function calculates the difference between the observed intensity values and a linearly interpolated line drawn across the window. This difference is known as the residual, denoted as $\text{resid}$. If any residual value exceeds a predefined threshold, it is considered indicative of a spike. The function then corrects the spike by replacing the affected intensity values with the corresponding values from the interpolated line, ensuring a smooth transition across the window. The mathematical formulation for this process is as follows:
 
 $$
 I'(x_j) = 
@@ -52,4 +52,4 @@ I(x_j) & \text{if } \text{resid}(x_j) < \text{Threshold} \\
 \end{cases}
 $$
 
-In this equation, \( I(x_j) \) represents the original intensity at position \( x_j \), \( I'(x_j) \) is the corrected intensity after despiking, \( \text{resid}(x_j) \) is the residual difference, \( \text{Threshold} \) is the spike detection threshold, and \( L \) denotes the `zap_length`. The linear interpolation is calculated over the range of the zap length, ensuring that any detected spikes are replaced with a smooth, continuous line that better reflects the underlying spectral data.
+In this equation, $I(x_j)$ represents the original intensity at position $x_j$, $I'(x_j)$ is the corrected intensity after despiking, $\text{resid}(x_j)$ is the residual difference, $\text{Threshold}$ is the spike detection threshold, and $L$ denotes the `zap_length`. The linear interpolation is calculated over the range of the zap length, ensuring that any detected spikes are replaced with a smooth, continuous line that better reflects the underlying spectral data.

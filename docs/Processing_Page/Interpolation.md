@@ -46,10 +46,10 @@ I(x) = I(x_i) + \frac{I(x_{i+1}) - I(x_i)}{x_{i+1} - x_i} \times (x - x_i)
 $$
 
 where:
-- \( I(x) \) is the interpolated intensity at a new Ramanshift value \( x \),
-- \( I(x_i) \) and \( I(x_{i+1}) \) are the intensities at the original Ramanshift values \( x_i \) and \( x_{i+1} \),
-- \( x \) is the new Ramanshift value to which interpolation is applied,
-- \( x_i \) and \( x_{i+1} \) are the original Ramanshift values that bracket \( x \).
+- $I(x)$ is the interpolated intensity at a new Ramanshift value $x$,
+- $I(x_i)$ and $I(x_{i+1})$ are the intensities at the original Ramanshift values $x_i$ and $x_{i+1}$,
+- $x$ is the new Ramanshift value to which interpolation is applied,
+- $x_i$ and $x_{i+1}$ are the original Ramanshift values that bracket $x$.
 
 This method effectively smooths the data, filling in gaps and creating a more consistent dataset for further analysis. The `interp1d` function from `scipy.interpolate` is a robust and efficient tool for implementing this interpolation, making it well-suited for processing spectral data.
 
