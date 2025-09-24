@@ -17,13 +17,13 @@ Overview of the analytics features on this page.
 
 | Feature                                             | Utility Overview                                                                         | More Info    |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------|--------------|
-| Average Plot with Original Spectra                  | Visualize original data, visualize standard deviation and mean spectrum                  | [Average_Plot](docs/Analytics_Page/Average_Plot/)             |
-| Confidence Interval Plot                            | Visualize standard deviation and mean spectrum                                           | [Confidence_Interval_Plot](docs/Analytics_Page/Confidence_Interval_Plot/)             |
+| Average Plot with Original Spectra                  | Visualize original data, visualize standard deviation and mean spectrum                  | [Average_Plot](docs/Analytics_Page/Analytics_Features/Average_Plot/)             |
+| Confidence Interval Plot                            | Visualize standard deviation and mean spectrum                                           | [Confidence_Interval_Plot](docs/Analytics_Page/Analytics_Features/Confidence_Interval_Plot/)             |
 | Derivative Analysis                                 |                                                                                          |              |
-| Correlation Heatmap                                 | Quantify similarities between spectra trends in a grid format                            | [Correlation_Heatmap](docs/Analytics_Page/Correlation_Heatmap/)             |
-| Peak Identification and Stats                       | Identify and classify peaks in spectra intensity                                         | [Peak_Identification](docs/Analytics_Page/Peak_Identification/)             |
-| Hierarchically-clustered Heatmap                    | Group spectra with similar spectra, visualize differences with a color mapping           | [Clustermap](docs/Analytics_Page/Clustermap/)             |
-| Principal Component Analysis (PCA)                  | Simplify data by reducing it to a small list of components, useful for identifying noise | [PCA](docs/Analytics_Page/Principal_Component_Analysis/)             |
-| T-Distributed Stochastic Neighbor Embedding (t-SNE) | Visualize clustering of high-dimensional data in 2D                                      | [T-SNE](docs/Analytics_Page/T-SNE/)             |
+| Correlation Heatmap                                 | Quantify similarities between spectra trends in a grid format                            | [Correlation_Heatmap](docs/Analytics_Page/Analytics_Features/Correlation_Heatmap/)             |
+| Peak Identification and Stats                       | Identify and classify peaks in spectra intensity                                         | [Peak_Identification](docs/Analytics_Page/Analytics_Features/Peak_Identification/)             |
+| Hierarchically-clustered Heatmap                    | Group spectra with similar spectra, visualize differences with a color mapping           | [Clustermap](docs/Analytics_Page/Analytics_Features/Clustermap/)             |
+| Principal Component Analysis (PCA)                  | Simplify data by reducing it to a small list of components, useful for identifying noise | [PCA](docs/Analytics_Page/Analytics_Features/Principal_Component_Analysis/)             |
+| T-Distributed Stochastic Neighbor Embedding (t-SNE) | Visualize clustering of high-dimensional data in 2D                                      | [T-SNE](docs/Analytics_Page/Analytics_Features/T-SNE/)             |
 
 Please find more detailed information in child documents.
