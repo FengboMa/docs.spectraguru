@@ -23,12 +23,12 @@ math: katex
 
 Interpolation is a critical feature in the application that allows users to resample their spectral data, particularly Ramanshift values, to ensure they align with a uniform set of integers. This process is essential for maintaining consistency across datasets, especially when comparing spectra with slightly different measurement intervals. By rounding Ramanshift values to the nearest integer and recalculating the corresponding intensity values, the application ensures that the data is smoothly and accurately represented.
 
-## How to use:
+## How to Use
 
-To interpolate you data:
+To interpolate your data:
 
 0. Upload data and select spectra you want to process.
-1. Navigate to sidebar, and turn on Interpolation toggle.
+1. Navigate to sidebar, and turn on the "Interpolation" toggle.
 2. Click on Process button on the bottom of the sidebar.
 
 ## Behavior

@@ -4,7 +4,7 @@ title: Despike
 parent: Processing Feature
 grand_parent: Processing Page
 permalink: /docs/Processing_Page/Processing_Feature/Despike/
-nav_order: 2
+nav_order: 3
 ---
 
 # Despike
@@ -22,12 +22,12 @@ nav_order: 2
 
 The Despike function, sometimes referred to as spike removal, is an essential tool in the application designed to automatically detect and remove spikes in spectral data, which are often caused by noise or transient artifacts during data acquisition (Cosmic ray spikes can also be removed with this function.) 
 
-## How to use:
+## How to Use
 
 To remove spikes in your data:
 
 0. Upload data and select spectra you want to process.
-1. Navigate to sidebar, and turn on Despike toggle.
+1. Navigate to sidebar, and turn on the "Despike" toggle.
     - Set Despike threshold (default to 300)
     - Set Despike zap length / window size (default to 11)
 2. Click on Process button on the bottom of the sidebar.
