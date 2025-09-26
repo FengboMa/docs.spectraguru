@@ -55,8 +55,8 @@ This feature should identify and remove unwanted baselines from spectral data us
 ## Method
 
 - If using AirPLS, a background vector is iteratively adjusted according to how well it fits with a *weighted* version of the data. The weights change each iteration, and peaks in the data are intentionally given low weights so that they are less likely to be interfered with after baseline removal. AirPLS keeps refining the background vector until it is within the tolerance (tau) of the weighted data or it has reached the maximum number of iterations.
-- If using ModPoly, a polynomial function with degree specified by the user is iteratively fitted to the data until it either stops making sufficient progress each iteration or reaches the maximum number of iterations.
-- If using Gaussian-Lorentzian Fitting, a hybrid of both a Gaussian and Lorentzian curve is fitted to the data to determine the baseline. A Gaussian curve takes the mathematical form:
+- If using ModPoly, a polynomial function with degree specified by the user is iteratively fitted to the data until it either stops making sufficient progress each iteration or reaches the maximum number of iterations. This polynomial is treated as the baseline and subtracted from the original data.
+- If using Gaussian-Lorentzian Fitting, a hybrid of both a Gaussian and Lorentzian curve is fitted to the data in each range to determine the baseline. A Gaussian curve takes the following mathematical form:
 
     $$
     A e^{-\frac{(x-p)^2}{2\sigma^2}}
