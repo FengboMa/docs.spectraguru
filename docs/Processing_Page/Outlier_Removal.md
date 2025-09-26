@@ -36,13 +36,13 @@ To remove outlying samples from your data:
 
 ## Behavior
 
-When spectra are flagged for being an outlier, the entire spectrum is removed, not individual observations. The "average spectrum" is a new spectrum calculated by taking the mean intensity across all samples at each Ramanshift (see documentation on [Average Plot](/docs/Analytics_Page/Analytics_Features/Average_Plot/)).
+When spectra are flagged for being an outlier, the entire spectrum is removed, not individual observations. The "average spectrum" is a new spectrum calculated by taking the mean intensity across all samples at each Ramanshift (see documentation on [Average Plot](/docs.spectraguru/docs/Analytics_Page/Analytics_Features/Average_Plot/)).
 
 A spectrum is flagged as an outlier if it fails any of the following three tests:
 
-0. Single threshold: If a spectrum contains data that differs from the average spectrum too greatly at *any* Ramanshift value, it is considered an outlier. How much it is allowed to differ depends on the threshold value set by the user, which defaults to `4`. This value represents the number of *standard deviations* from the average spectrum that are allowed.
-1. Distance threshold: The *distance* between a spectrum $S$ and the average spectrum $S_{\text{avg}}$ is calculated as $\sqrt{\sum_x \left(S(x)-S_{\text{avg}}(x)\right)^2}$. Spectra that are more than $d$ standard deviations away from the average spectrum, where $d$ is the threshold set by the user (defaults to `6`), will be considered outliers.
-2. Correlation threshold: The *correlation* between a spectrum and the average spectrum is determined by the Pearson Correlation Coefficient between them (see documentation on the [Correlation Heatmap](/docs/Analytics_Page/Analytics_Features/Correlation_Heatmap/) for more about this). Spectra whose correlations to the average spectrum fall short by more than $d$ standard deviations, where $d$ is the threshold set by the user (defaults to `4`), will be considered outliers.
+0. Single threshold: If a spectrum contains data that differs from the average spectrum too greatly at *any* Ramanshift value, it is considered an outlier. How much it is allowed to differ depends on the threshold value set by the user, which defaults to `4.0`. This value represents the number of *standard deviations* from the average spectrum that are allowed.
+1. Distance threshold: The *distance* between a spectrum $S$ and the average spectrum $S_{\text{avg}}$ is calculated as $\sqrt{\sum_x \left(S(x)-S_{\text{avg}}(x)\right)^2}$. Spectra that are more than $d$ standard deviations away from the average spectrum, where $d$ is the threshold set by the user (defaults to `6.0`), will be considered outliers.
+2. Correlation threshold: The *correlation* between a spectrum and the average spectrum is determined by the Pearson Correlation Coefficient between them (see documentation on the [Correlation Heatmap](/docs.spectraguru/docs/Analytics_Page/Analytics_Features/Correlation_Heatmap/) for more about this). Spectra whose correlations to the average spectrum fall short by more than $d$ standard deviations, where $d$ is the threshold set by the user (defaults to `4.0`), will be considered outliers.
 
 ## References
 
