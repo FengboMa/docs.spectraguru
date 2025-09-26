@@ -28,7 +28,7 @@ Interpolation is a critical feature in the application that allows users to resa
 To interpolate your data:
 
 0. Upload data and select spectra you want to process.
-1. Navigate to sidebar, and turn on the "Interpolation" toggle.
+1. Navigate to sidebar and turn on the "Interpolation" toggle.
 2. Click on Process button on the bottom of the sidebar.
 
 ## Behavior

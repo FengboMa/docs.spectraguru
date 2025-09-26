@@ -27,7 +27,7 @@ The Despike function, sometimes referred to as spike removal, is an essential to
 To remove spikes in your data:
 
 0. Upload data and select spectra you want to process.
-1. Navigate to sidebar, and turn on the "Despike" toggle.
+1. Navigate to sidebar and turn on the "Despike" toggle.
     - Set Despike threshold (default to 300)
     - Set Despike zap length / window size (default to 11)
 2. Click on Process button on the bottom of the sidebar.

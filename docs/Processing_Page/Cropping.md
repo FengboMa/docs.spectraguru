@@ -34,5 +34,5 @@ To crop your data:
 ## Behavior
 
 The expected behavior of the crop function is to remove spectral data not in the range of interest. The range is set using either:
-    - A slider with two parameters (min and max) between the original range.
-    - A pair of textboxes: one to set the minimum Ramanshift value, and another to set the maximum.
+- A slider with two parameters (min and max) between the original range.
+- A pair of textboxes: one to set the minimum Ramanshift value, and another to set the maximum.
