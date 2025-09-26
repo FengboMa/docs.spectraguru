@@ -52,7 +52,7 @@ The Smoothening function applies either the Savitzky-Golay filter or the 1D Fast
         $$
 
         where $I(x)$ is the actual intensity at Ramanshift $x$.
-    2. Minimize the above expression using least squares on the coefficients $a_i$. Then use the polynomial fit to find the filtered intensity at Ramanshift $x$.
+    2. Minimize the above expression using least squares optimization on the coefficients $a_i$. Then use the polynomial fit to find the filtered intensity at Ramanshift $x$.
     3. Repeat this process for all $x$.
 - If using the 1D Fast Fourier Transform (FFT) filter, SpectraGuru uses Numpy's [`fft.fft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.fft.html) and [`fft.ifft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.ifft.html) functions to convert your data to and from frequency space, zeroing out high frequencies in the process and removing noise. The process is as follows:
     0. Pad the data based on the specified padding method.
