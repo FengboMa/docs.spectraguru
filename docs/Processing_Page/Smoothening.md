@@ -32,8 +32,8 @@ To apply smoothening to your spectral data:
     - Savitzky-Golay filter
     - 1D Fast Fourier Transform (FFT) filter
 3. Configure parameters based on the selected method:
-    - For Savitzky-Golay, set the window length (defaults to 15) and the polynomial order (defaults to 2). The polynomial order should be less than the window length.
-    - For 1D FFT, set the FFT threshold (defaults to 0.100) and the padding method (can be "mirror," "edge," or "zero").
+    - For Savitzky-Golay, set the window length (defaults to `15`) and the polynomial order (defaults to `2`). The polynomial order should be less than the window length.
+    - For 1D FFT, set the FFT threshold (defaults to `0.100`) and the padding method (can be "mirror," "edge," or "zero").
 
 ## Behavior
 

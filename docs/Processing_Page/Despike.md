@@ -28,8 +28,8 @@ To remove spikes in your data:
 
 0. Upload data and select spectra you want to process.
 1. Navigate to sidebar and turn on the "Despike" toggle.
-    - Set Despike threshold (default to 300)
-    - Set Despike zap length / window size (default to 11)
+    - Set Despike threshold (defaults to `300`)
+    - Set Despike zap length / window size (defaults to `11`)
 2. Click on Process button on the bottom of the sidebar.
 
 ## Behavior
