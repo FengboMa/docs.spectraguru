@@ -15,6 +15,10 @@ nav_order: 4
 
 ---
 
+## Video Demonstration
+
+To learn more about how to upload your data, please watch our [YouTube Video](https://www.youtube.com/watch?v=ABpBwUnmEWw) about the data upload page.
+
 ## Supported formats
 
 SpectraGuru currently supports the following data formats. 

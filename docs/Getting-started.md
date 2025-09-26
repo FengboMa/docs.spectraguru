@@ -15,6 +15,9 @@ nav_order: 3
 
 ---
 
+## Introductory Video
+
+For a brief introduction to SpectraGuru, see our [YouTube Video](https://www.youtube.com/watch?v=GwJ501yy63w) tour.
 
 ## Quick start
 
