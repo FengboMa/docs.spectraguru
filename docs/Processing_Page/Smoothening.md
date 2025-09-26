@@ -7,7 +7,7 @@ permalink: /docs/Processing_Page/Processing_Feature/Smoothening/
 nav_order: 4
 ---
 
-# Despike
+# Smoothening
 {: .no_toc }
 
 ## Table of contents
