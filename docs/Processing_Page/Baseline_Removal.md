@@ -62,13 +62,13 @@ This feature should identify and remove unwanted baselines from spectral data us
     A e^{-\frac{(x-p)^2}{2\sigma^2}}
     $$
 
-    where $A$ is related to the amplitude of the peak of the curve, $p$ represents the location of the peak, and $\sigma$ represents the standard deviation of the peak (related to its width). A Lorentzian curve looks similar but takes a different mathematical form:
+    where $A$ is the amplitude of the peak of the curve, $p$ represents the location of the peak, and $\sigma$ represents the standard deviation of the peak (related to its width). A Lorentzian curve looks similar but takes a different mathematical form:
 
     $$
-    \frac{A}{\pi} \cdot \frac{\gamma}{(x-p)^2+\gamma^2}
+    \frac{S}{\pi} \cdot \frac{\gamma}{(x-p)^2+\gamma^2}
     $$
 
-    where $\gamma$ is related to the width of the peak. The Gaussian and Lorentzian curves are combined simply by adding them together; this is the curve tweaked by the algorithm to be fit to your data and subtracted off as a baseline.
+    where $S$ is the area under the curve, and $\gamma$ is related to the width of the peak. The Gaussian and Lorentzian curves are combined simply by adding them together; this is the curve tweaked by the algorithm to be fitted to your data and subtracted off as a baseline.
 
 ## References
 

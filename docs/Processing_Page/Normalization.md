@@ -37,14 +37,14 @@ To normalize your data:
 ## Behavior
 
 The normalization feature rescales your data to follow a standard so that it can be meaningfully compared to other data. That standard varies based on which of the following three methods is chosen:
-- Normalize by area: Good for standardizing data with different measurement conditions. Rescales each data point so that the total area under the spectrum curve is `1`. The area is calculated using a trapezoidal sum. Mathmatically, the normalized intensity $S(x)$ at Ramanshift $x$ is determined by:
+- Normalize by area: Good for standardizing data with different measurement conditions. Rescales each data point so that the total area under the spectrum curve is `1`. The area is calculated using a trapezoidal sum. Mathematically, the normalized intensity $S(x)$ at Ramanshift $x$ is determined by:
 
     $$
     S(x)=\frac{1}{I(x)}\sum_{i=1}^n \frac{1}{2}\left(I(x_i)+I(x_{i-1})\right)\left(x_i-x_{i-1}\right)
     $$
 
     where $I(x)$ is the intensity observed at Ramanshift $x$, and $n$ is the number of Ramanshift values observed for a given spectrum.
-- Normalize by peak: Good for understanding and comparing peak structure. Rescales each data point so that the highest peak has an intensity of `1`. Mathematiaclly, the normalized intensity is calculated as follows:
+- Normalize by peak: Good for understanding and comparing peak structure. Rescales each data point so that the highest peak has an intensity of `1`. Mathematically, the normalized intensity is calculated as follows:
 
     $$
     S(x)=\frac{I(x)}{I_{\text{max}}}
