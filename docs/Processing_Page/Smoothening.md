@@ -52,7 +52,7 @@ The Smoothening function applies either the Savitzky-Golay filter or the 1D Fast
         $$
 
         where $I(x)$ is the actual intensity at Ramanshift $x$.
-    2. Minimize the above expression using least squares on the coefficients $a_i$. Then use the polynomial fit to find the filtered intensity at Ramanshift $x$.
+    2. Minimize the above expression using least squares optimization on the coefficients $a_i$. Then use the polynomial fit to find the filtered intensity at Ramanshift $x$.
     3. Repeat this process for all $x$.
 - If using the 1D Fast Fourier Transform (FFT) filter, SpectraGuru uses Numpy's [`fft.fft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.fft.html) and [`fft.ifft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.ifft.html) functions to convert your data to and from frequency space, zeroing out high frequencies in the process and removing noise. The process is as follows:
     0. Pad the data based on the specified padding method.
@@ -65,7 +65,7 @@ The Smoothening function applies either the Savitzky-Golay filter or the 1D Fast
 
 ## References
 
-SpectraGuru uses SciPy's [`signal.savgol_filter`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.savgol_filter.html) function for Savitzky-Golay smoothening, as well as Numpy's [`fft.fft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.fft.html) and [`fft.ifft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.ifft.html) functions for doing FFT and inverse FFT.
+SpectraGuru uses SciPy's [`signal.savgol_filter`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.savgol_filter.html) function for Savitzky-Golay smoothening, as well as NumPy's [`fft.fft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.fft.html) and [`fft.ifft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.ifft.html) functions for doing FFT and inverse FFT.
 
 1. Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith, N. J., & others. (2020). Array programming with NumPy. Nature, 585(7825), 357–362. https://doi.org/10.1038/s41586-020-2649-2
 
