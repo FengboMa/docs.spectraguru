@@ -19,7 +19,7 @@ Overview of the analytics features on this page.
 |-----------------------------------------------------|------------------------------------------------------------------------------------------|--------------|-----------|
 | Average Plot with Original Spectra                  | Visualize original data, visualize standard deviation and mean spectrum                  | [Average Plot](Analytics_Features/Average_Plot/)             |    |
 | Confidence Interval Plot                            | Visualize standard deviation and mean spectrum                                           | [Confidence Interval Plot](Analytics_Features/Confidence_Interval_Plot/)             |   |
-| Derivative Analysis                                 |                                                                                          |              |   |
+| Spectra Derivation                                  | Visualize the first and second derivatives of your data     | [Spectra Derivation](Analytics_Features/Derivative_Analysis/)             |   |
 | Correlation Heatmap                                 | Quantify similarities between spectra trends in a grid format                            | [Correlation Heatmap](Analytics_Features/Correlation_Heatmap/)             |   |
 | Peak Identification and Stats                       | Identify and classify peaks in spectra intensity                                         | [Peak Identification](Analytics_Features/Peak_Identification/)             |    |
 | Hierarchically-clustered Heatmap                    | Group spectra with similar spectra, visualize differences with a color mapping           | [Clustermap](Analytics_Features/Clustermap/)             |    |
