@@ -31,7 +31,7 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
 
 ## Definitions
 
-- $\lvert\lvert A-B\rvert\rvert$ denotes the *Euclidean distance* between samples $A$ and $B$ (see the [hierarchically-clustered heatmap](/Analytics_Page/Analytics_Features/Clustermap/) documentation for how Euclidean distance is defined)
+- $\lvert\lvert A-B\rvert\rvert$ denotes the *Euclidean distance* between samples $A$ and $B$ (see the [hierarchically-clustered heatmap](/docs.spectraguru/docs/Analytics_Page/Analytics_Features/Clustermap/) documentation for how Euclidean distance is defined)
 - A *Gaussian distribution* is a probability distribution also known as a normal distribution or a "bell curve," expressed mathematically as $e^{-t^2/(2\sigma^2)}$, where $\sigma$ is the standard deviation of the distribution.
 - The *scaled similarity* between a sample $A_i$ and another sample $A_j$ is based on the normalized Gaussian distribution of their distance compared to all other points, defined by:
     
