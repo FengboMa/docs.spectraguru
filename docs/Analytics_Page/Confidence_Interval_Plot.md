@@ -29,6 +29,6 @@ The confidence interval plot is a concise way to view both the mean intensities 
 
 ## Behavior
 
-Both the average spectrum and standard deviation values are calculated via the same methods as in the “Average Plot with Original Spectra” feature discussed previously. See related documentation [here](https://fengboma.github.io/docs.spectraguru/docs/Analytics_Page/Average_Plot/).
+Both the average spectrum and standard deviation values are calculated via the same methods as in the “Average Plot with Original Spectra” feature discussed previously. See related documentation [here](/Analytics_Page/Analytics_Features/Average_Plot/).
 
 - Confidence interval: The bounds of the light blue region are calculated by adding/subtracting the standard deviation to/from the average spectrum. Mathematically speaking, the upper bound line $U(x)$ is determined by $U(x)=\overline{I}(x)+\sigma(x)$, and the lower bound line $L(x)$ is determined by $L(x)=\overline{I}(x)-\sigma(x)$, where $\overline{I}(x)$ is the average intensity of the spectra at Raman shift $x$ $[{cm}^{-1}]$, and $\sigma(x)$ is the standard deviation.
