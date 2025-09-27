@@ -34,7 +34,7 @@ SpectraGuru offers a derivative analysis feature that plots the first and second
 ## Behavior
 
 - What is being plotted: The derivative plot of a spectrum attempts to encapsulate the rate of change in intensity observed at each Ramanshift with respect to wavenumber (how quickly intensity increases/decreases as wavenumber increases). The first derivative is the derivative of the original data, and the second derivative is the derivative of the first derivative.
-- Algorithm: Algorithm: To differentiate your data, SpectraGuru uses a Savitzky-Golay filter, which first smooths out your data by fitting small windows of it to a polynomial curve. This polynomial is what is differentiated to approximate the true derivative of your data.
+- Algorithm: To differentiate your data, SpectraGuru uses a Savitzky-Golay filter, which first smooths out your data by fitting small windows of it to a polynomial curve. This polynomial is what is differentiated to approximate the true derivative of your data.
 - Normalization: Currently, one optional normalization method is offered (min/max normalization), which rescales the derivative plots after computing them. The plots are rescaled so that the highest peak is at `1.0` and the lowest point is at `0.0` (for more about min/max normalization, see our [Normalization](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Normalization/) documentation).
 
 ## References
