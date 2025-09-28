@@ -26,7 +26,7 @@ The Normalization feature in SpectraGuru standardizes spectral data and eliminat
 
 To normalize your data:
 
-0. Upload data and select the spectra to be proceseds.
+0. Upload data and select the spectra to be processed.
 1. Navigate to the sidebar and turn on the "Normalization" toggle.
 2. Select a normalization method from the drop-down menu:
     - Normalize by area
