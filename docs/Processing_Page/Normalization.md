@@ -40,7 +40,7 @@ The normalization feature rescales your data to follow a standard so that it can
 - Normalize by area: Good for standardizing data with different measurement conditions. Rescales each data point so that the total area under the spectrum curve is `1`. The area is calculated using a trapezoidal sum. Mathematically, the normalized intensity $S(x)$ at Ramanshift $x$ is determined by:
 
     $$
-    S(x)=\frac{1}{I(x)}\sum_{i=1}^n \frac{1}{2}\left(I(x_i)+I(x_{i-1})\right)\left(x_i-x_{i-1}\right)
+    S(x)=\frac{I(x)}{\sum_{i=1}^n \frac{1}{2}\left(I(x_i)+I(x_{i-1})\right)\left(x_i-x_{i-1}\right)}
     $$
 
     where $I(x)$ is the intensity observed at Ramanshift $x$, and $n$ is the number of Ramanshift values observed for a given spectrum.
