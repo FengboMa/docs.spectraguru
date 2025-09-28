@@ -72,6 +72,6 @@ This feature should identify and remove unwanted baselines from spectral data us
 
 ## References
 
-The AirPLS algorithm that SpectraGuru uses is a translation of the R source code from AirPLS version 2.0 by Yizeng Liang and Zhang Zhimin, which can be found at https://code.google.com/p/airpls.
+The AirPLS algorithm that SpectraGuru uses is a translation of the R source code from AirPLS version 2.0 by Yizeng Liang and Zhang Zhimin, which can be found at <https://code.google.com/p/airpls>.
 
 1. Z.-M. Zhang, S. Chen, and Y.-Z. Liang, Baseline correction using adaptive iteratively reweighted penalized least squares. Analyst 135 (5), 1138-1146 (2010).
