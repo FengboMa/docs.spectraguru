@@ -27,8 +27,8 @@ SpectraGuru offers a derivative analysis feature that plots the first and second
 0. In the analytics page, after processing your data, select “Spectra Derivation” from the drop-down menu on the left sidebar.
 1. Select which normalization method you would like to use, if any. So far, only min/max normalization is offered for derivative analysis.
 2. Finally, adjust the Savitzky-Golay parameters (window length and polynomial order) for the derivation process. This will be used to systematically derive your spectra by fitting them to polynomial curves (for more about Savitzky-Golay, see our documentation on [Smoothening](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Smoothening/)).
-    - Window length (defaults to 11): Should be odd. Smaller values are typically better for noisy data, and larger values are typically better for data with sharp peaks.
-    - Polynomial order (defaults to 3): Should be less than the window length. Higher values will fit the spectra more closely but will also retain noise.
+    - Window length (defaults to `11`): Should be odd. Smaller values are typically better for noisy data, and larger values are typically better for data with sharp peaks.
+    - Polynomial order (defaults to `3`): Should be less than the window length. Higher values will fit the spectra more closely but will also retain noise.
 3. On the right, two plots will be displayed: The top plot shows the first derivative $(\text{a.u.}/{\text{cm}^{-1}})$, and the bottom plot shows the second derivative $(\text{a.u.}/{\text{cm}^{-2}})$. Each sample (including the average spectrum) is plotted on the same graph.
 
 ## Behavior
