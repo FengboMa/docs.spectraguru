@@ -4,6 +4,7 @@ title: Normalization
 parent: Processing Feature
 grand_parent: Processing Page
 permalink: /docs/Processing_Page/Processing_Feature/Normalization/
+has_children: true
 nav_order: 6
 ---
 
