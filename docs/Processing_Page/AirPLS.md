@@ -3,6 +3,7 @@ layout: default
 title: AirPLS
 parent: Baseline Removal
 grand_parent: Processing Feature
+ancestor: Processing Page
 permalink: /docs/Processing_Page/Processing_Feature/Baseline_Removal/AirPLS/
 nav_order: 1
 ---
