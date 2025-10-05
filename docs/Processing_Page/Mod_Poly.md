@@ -3,6 +3,7 @@ layout: default
 title: ModPoly
 parent: Baseline Removal
 grand_parent: Processing Feature
+ancestor: Processing Page
 permalink: /docs/Processing_Page/Processing_Feature/Baseline_Removal/Mod_Poly/
 nav_order: 2
 ---

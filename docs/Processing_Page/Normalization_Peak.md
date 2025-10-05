@@ -3,6 +3,7 @@ layout: default
 title: Normalization by Peak
 parent: Normalization
 grand_parent: Processing Feature
+ancestor: Processing Page
 permalink: /docs/Processing_Page/Processing_Feature/Normalization/Normalization_Peak
 nav_order: 2
 ---

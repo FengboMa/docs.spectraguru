@@ -3,6 +3,7 @@ layout: default
 title: Gaussian-Lorentzian Fitting
 parent: Baseline Removal
 grand_parent: Processing Feature
+ancestor: Processing Page
 permalink: /docs/Processing_Page/Processing_Feature/Baseline_Removal/Gaussian-Lorentzian_Fitting/
 nav_order: 3
 ---
