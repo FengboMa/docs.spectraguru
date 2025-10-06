@@ -3,6 +3,7 @@ layout: default
 title: Smoothening
 parent: Processing Feature
 grand_parent: Processing Page
+has_children: true
 permalink: /docs/Processing_Page/Processing_Feature/Smoothening/
 nav_order: 4
 ---
