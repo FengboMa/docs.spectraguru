@@ -34,3 +34,7 @@ To use ModPoly for baseline removal:
 ModPoly fits a polynomial function to estimate and subtract the baseline from the spectra.
 
 A polynomial function with degree specified by the user is iteratively fitted to the data until it either stops making sufficient progress each iteration or reaches the maximum number of iterations. This polynomial is treated as the baseline and subtracted from the original data.
+
+---
+
+[Back to Baseline Removal](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Baseline_Removal/)

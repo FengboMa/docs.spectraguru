@@ -37,3 +37,7 @@ S(x)=\frac{I(x)}{I_{\text{max}}}
 $$
 
 where $I_{\text{max}}$ is the peak intensity for a given spectrum.
+
+---
+
+[Back to Normalization](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Normalization/)

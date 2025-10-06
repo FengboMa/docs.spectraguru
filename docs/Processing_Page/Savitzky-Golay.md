@@ -49,3 +49,7 @@ If "Savitky-Golay filter" is selected, SpectraGuru's smoothening feature applies
 SpectraGuru uses SciPy's [`signal.savgol_filter`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.savgol_filter.html) function for Savitzky-Golay smoothening.
 
 1. Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., ... SciPy 1.0 Contributors. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. Nature Methods, 17(3), 261–272. https://doi.org/10.1038/s41592-019-0686-2
+
+---
+
+[Back to Smoothening](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Smoothening/)

@@ -37,3 +37,7 @@ S(x)=\frac{I(x)-I_{\text{min}}}{I_{\text{max}}-I_{\text{min}}}
 $$
 
 where $I_{\text{max}}$ is the peak intensity and $I_{\text{min}}$ is the minimum intensity.
+
+---
+
+[Back to Normalization](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Normalization/)

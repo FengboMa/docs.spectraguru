@@ -46,3 +46,7 @@ If using the 1D Fast Fourier Transform (FFT) filter, SpectraGuru uses Numpy's [`
 SpectraGuru uses NumPy's [`fft.fft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.fft.html) and [`fft.ifft`](https://numpy.org/doc/stable/reference/generated/numpy.fft.ifft.html) functions for doing FFT and inverse FFT.
 
 1. Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith, N. J., & others. (2020). Array programming with NumPy. Nature, 585(7825), 357–362. https://doi.org/10.1038/s41586-020-2649-2
+
+---
+
+[Back to Smoothening](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Smoothening/)
