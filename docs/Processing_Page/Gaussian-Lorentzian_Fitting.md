@@ -48,3 +48,7 @@ $$
 $$
 
 where $S$ is the area under the curve, and $\gamma$ is related to the width of the peak. The Gaussian and Lorentzian curves are combined simply by adding them together; this is the curve tweaked by the algorithm to be fitted to your data and subtracted off as a baseline.
+
+---
+
+[Back to Baseline Removal](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Baseline_Removal/)

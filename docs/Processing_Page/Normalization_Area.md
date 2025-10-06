@@ -37,3 +37,7 @@ S(x)=\frac{I(x)}{\sum_{i=1}^n \frac{1}{2}\left(I(x_i)+I(x_{i-1})\right)\left(x_i
 $$
 
 where $I(x)$ is the intensity observed at Ramanshift $x$, and $n$ is the number of Ramanshift values observed for a given spectrum.
+
+---
+
+[Back to Normalization](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Normalization/)
