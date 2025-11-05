@@ -4,7 +4,7 @@ title: Principal Component Analysis
 parent: Analytics Features
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Principal_Component_Analysis/
-nav_order: 7
+nav_order: 8
 ---
 
 # Principal Component Analysis (PCA)
