@@ -47,7 +47,7 @@ SpectraGuru offers a Gaussian Peak Fitting feature, which fits Gaussian curves (
     The cost function $C$ is defined as follows:
 
     $$
-    C=\sum_x S(x)\lvert I(x)-\sum_{i=0}^{n_P}\left(A_i e^{-\frac{(x-\mu_i)^2}{2{\sigma_i}^2}}\right)\rvert
+    C=\sum_x S(x)\left\lvert I(x)-\sum_{i=0}^{n_P}\left(A_i e^{-\frac{(x-\mu_i)^2}{2{\sigma_i}^2}}\right)\right\rvert
     $$
 
     where $I(x)$ is the intensity at Ramanshift $x$, and $S(x)$ is the following modified sigmoid function:
