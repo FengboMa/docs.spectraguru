@@ -57,7 +57,7 @@ SpectraGuru offers a Gaussian Peak Fitting feature, which fits Gaussian curves (
     $$
 
     where $c_P$ is the center of the peak and $w_P$ is the width of the peak. The purpose of the modified sigmoid is to prevent the Gaussian curves from trying to fit to data far from the peak itself ($S(x)$ is close to $0$ when $\lvert x-c_P\rvert$ is far from $0$). This ensures that irrelevant data does not interfere with the fit around the peak.
-- Display: After calculating the optimal fit for each peak, the final results are displayed on a plot alongside the original data. The sum of all Gaussian curves is also plotted with the label `GSUM`. Underneath the plot is a table containing the resulting fit data, where Gaussian curve intensities are rounded to four decimal places. You can download this data as a CSV file by clicking the button labeled "Download Gaussian Fit Data."
+- Display: After calculating the optimal fit for each peak, the final results are displayed on a plot alongside the original data. The sum of all Gaussian curves is also plotted with the label `GSUM`. Underneath the plot is a table containing the resulting fit data, where Gaussian curve intensities are rounded to four decimal places. You can download this data as a CSV file by clicking the button labeled "Download Gaussian Fit data as CSV."
 
 ## References
 
