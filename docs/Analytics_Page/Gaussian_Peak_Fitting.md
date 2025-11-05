@@ -43,14 +43,15 @@ SpectraGuru offers a Gaussian Peak Fitting feature, which fits Gaussian curves (
     1. The number of Gaussian curves assigned to a peak is roughly proportional to that peak's prominence.
     2. Leftover curves from rounding are distributed as evenly as possible, with priority going to the most prominent peaks.
     For more about peak prominence, see our [Peak Identification docs](/docs.spectraguru/docs/Analytics_Page/Analytics_Features/Peak_Identification/).
+- Constant Model: Users can choose to introduce a contant baseline intensity, which all Gaussian curves will rest on. The constant model is added to the sum of Gaussian curves any time it is compared to the original data. Note that the data plotted on the graph and stored in the download table include the constant model.
 - Optimization method: To find the optimal fitting of $n_P$ Gaussian curves to a given peak $P$, SpectraGuru defines a cost function and uses SciPy's [`optimize.least_squares`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html) to minimize the cost function. The inputs of this function are the respective amplitudes ($A$), center points ($\mu$), and standard deviations ($\sigma$) of each Gaussian curve. This means that there are $3 n_P$ parameters to tweak to optimize the fitting for $P$.
     The cost function $C$ is defined as follows:
 
     $$
-    C=\sum_x S(x)\left\lvert I(x)-\sum_{i=0}^{n_P}\left(A_i e^{-\frac{(x-\mu_i)^2}{2{\sigma_i}^2}}\right)\right\rvert
+    C=\sum_x S(x)\left\lvert I(x)+M_C-\sum_{i=0}^{n_P}\left(A_i e^{-\frac{(x-\mu_i)^2}{2{\sigma_i}^2}}\right)\right\rvert
     $$
 
-    where $I(x)$ is the intensity at Ramanshift $x$, and $S(x)$ is the following modified sigmoid function:
+    where $I(x)$ is the intensity at Ramanshift $x$, $M_C$ is the constant model (baseline intensity), and $S(x)$ is the following modified sigmoid function:
 
     $$
     S(x)=\frac{1}{1+e^{\lvert x-c_P\rvert-\frac{w_P}{2}}}
