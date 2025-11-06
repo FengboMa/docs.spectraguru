@@ -25,9 +25,10 @@ SpectraGuru offers a Gaussian Peak Fitting feature, which fits Gaussian curves (
 ## How to Use
 
 0. In the analytics page, after processing your data, select "Gaussian Peak Fitting" from the dropdown menu on the left sidebar.
-1. Use the upper textbox to specify the number of peaks in your data to analyze (defaults to `1`, maximum is `20`).
-2. Use the lower textbox to specify the number of total Gaussian curves to fit to these peaks (defaults to `1`, maximum is `30`)
+1. Use the upper textbox to specify the number of peaks in your data to analyze (defaults to `3`, maximum is `20`).
+2. Use the lower textbox to specify the number of total Gaussian curves to fit to these peaks (defaults to `5`, maximum is `30`)
 3. If you would like to introduce a constant baseline, turn on the toggle labeled "Use constant model" and input the baseline intensity into the textbox that appears.
+4. Click the green button labeled "Submit Parameters" to run the calculations and display the results. You must use this button any time you make changes to the sidebar parameters.
 
 ## Behavior
 
