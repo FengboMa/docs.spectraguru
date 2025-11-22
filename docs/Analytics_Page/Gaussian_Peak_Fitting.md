@@ -20,7 +20,7 @@ nav_order: 6
 
 ## Introduction
 
-SpectraGuru offers a Gaussian Peak Fitting feature, which fits Gaussian curves (normal distributions) to your data around the most prominent peaks. This feature is useful for decompsing important peaks into simplified components that can be used for further analysis, including AI training. Users can also introduce a constant baseline, which is helpful for peaks whose bases are highly raised above the `intensity=0` axis.
+SpectraGuru offers a Gaussian Peak Fitting feature, which fits Gaussian curves (normal distributions) to your data around the most prominent peaks. This feature is useful for decompsing important peaks into simplified components that can be used for further analysis, including AI training. Users can also introduce a constant baseline, which is helpful for peaks whose bases are highly raised above the `intensity=0` axis. However, for the best results, it is *highly recommended* that you perform baseline removal in the preprocessing page before using Gaussian Peak Fitting.
 
 ## How to Use
 
