@@ -22,7 +22,7 @@ nav_order: 2
 
 The *crop* function in SpectraGuru is an essential tool designed to allow users to select a specific spectral range for analysis. This feature helps to exclude irrelevant data and focus on a targeted region of interest. By adjusting the crop range, users can refine their spectral data before performing further analysis.
 
-## How to Use
+## How to use
 
 To crop your data:
 
@@ -36,3 +36,19 @@ To crop your data:
 The expected behavior of the crop function is to remove spectral data not in the range of interest. The range is set using either:
 - A slider with two parameters (min and max) between the original range.
 - A pair of textboxes: one to set the minimum Ramanshift value, and another to set the maximum.
+
+## Method
+
+SpectraGuru keeps rows whose Raman shift falls inside the selected closed interval:
+
+$$x_{\min} \le x_i \le x_{\max}$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Crop min | Tunable | Lower Raman shift bound |
+| Crop max | Tunable | Upper Raman shift bound |
+| Included rows | Fixed | Rows outside the selected interval are removed |
+
+## References
+
+1. SpectraGuru implementation, self-implemented interval filtering.

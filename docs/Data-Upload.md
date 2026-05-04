@@ -21,7 +21,7 @@ To learn more about how to upload your data, please watch our [YouTube Video](ht
 
 ## Supported formats
 
-SpectraGuru currently supports the following data formats. 
+SpectraGuru currently supports the following data formats.
 
 - Multi files: .txt files (two-column single spectrum files. common x)
 - Multi files: .csv files (two-column single spectrum files. common x)
@@ -87,4 +87,16 @@ After a successful upload, user have two options redirect to Processing Page by,
 1. Click on Processing page button on main page
 2. Click on Processing page from sidebar
 
-A failure upload will be result in error messages in Processing and Analytics Page. The error messages will ask you go back to data upload to upload data. You would not see any follow up functions with a failure upload.  
+A failure upload will be result in error messages in Processing and Analytics Page. The error messages will ask you go back to data upload to upload data. You would not see any follow up functions with a failure upload.
+
+## Label setup for machine learning
+
+SpectraGuru stores labels during upload so Analytics machine learning tools can color or classify spectra.
+
+1. Set **Number of classes** before loading data. Use `1` for a single unlabeled batch, or set two or more classes when you plan to compare labeled groups.
+2. For each **Class** expander, optionally edit **Class label**. This label is used in generated spectrum names and in the default label table.
+3. Upload or query data for each class. When more than one class is loaded, SpectraGuru automatically interpolates all classes onto a shared Raman shift grid before combining them.
+4. After all selected classes are ready, review the label editor. It contains one row per spectrum with **Spectrum** and **Label** columns.
+5. Edit the **Label** column if needed. The edited table is stored as `label_df` and is used by PCA coloring and by Random Forest, KNN, and SVM classification.
+
+Classification requires labels for every selected spectrum and at least two unique label values. If labels are missing, Analytics displays an error and asks you to upload or assign labels before running classification.

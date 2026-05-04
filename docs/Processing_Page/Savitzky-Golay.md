@@ -19,7 +19,7 @@ nav_order: 1
 
 ---
 
-## How to Use
+## How to use
 
 To apply Savitzky-Golay smoothening to your data:
 
@@ -43,6 +43,18 @@ If "Savitky-Golay filter" is selected, SpectraGuru's smoothening feature applies
     where $I(x)$ is the actual intensity at Ramanshift $x$.
 2. Minimize the above expression using least squares optimization on the coefficients $a_i$. Then use the polynomial fit to find the filtered intensity at Ramanshift $x$.
 3. Repeat this process for all $x$.
+
+## Method
+
+The filter fits a local polynomial in each moving window and uses the fitted center value:
+
+$$\hat{y}_i = \sum_{j=-m}^{m} c_j y_{i+j}$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Savitzky-Golay window length | Tunable | Default `15`, UI range `1`-`100` |
+| Savitzky-Golay polynomial order | Tunable | Default `2`, UI range `1`-`15`; must be less than window length |
+| Filtering function | Fixed | `scipy.signal.savgol_filter` |
 
 ## References
 

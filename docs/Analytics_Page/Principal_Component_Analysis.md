@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Principal Component Analysis
-parent: Analytics Features
+parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Principal_Component_Analysis/
-nav_order: 8
+nav_order: 1
 ---
 
 # Principal Component Analysis (PCA)
@@ -34,9 +34,9 @@ Principal Component Analysis (PCA) is a way of boiling your data down to a small
     where $n$ is the number of data points in $x$, and $\bar{x}$ is the mean of the data.
 - The *loading score* of a variable for a given principal component quantifies the contribution of that variable to the unit principal component vector (also known as the *singular vector*). Mathematically, the loading score for variable $x_k$ is the $k^{th}$ entry of the singular vector.
 
-## How to Use
+## How to use
 
-0. In the analytics page, after processing your data, select “Principal Component Analysis (PCA)” from the drop-down menu on the left sidebar.
+0. In the analytics page, after processing your data, select “Principal Components Analysis (PCA)-Beta” from the drop-down menu on the left sidebar.
 1. The first plot is a scatterplot where each point represents one of your samples, and each axis represents a principal component of your data. To keep the plot 2-dimensional, only two principal components can be analyzed at a time. You can select which two principal components to analyze using the drop-down menus labeled “Select Horizontal PC” and “Select Vertical PC.”
 2. The second plot shows the *cumulative explained variance* as principal components are adopted from left to right. Keep in mind that principal components are ranked by dominance, with “PC1” contributing the most to the variance seen in the data.
     - *Cumulative explained variance* can be roughly summarized as the “resemblance to the original data if only the first $n$ principal components are used.”
@@ -55,6 +55,24 @@ Principal Component Analysis (PCA) is a way of boiling your data down to a small
 
     where $s^2(X)$ is the variance of data set $X$, $X$ is the original data, and ${proj}_{P_i}(X)$ is the projection of $X$ onto the singular vector of $P_i$.
 - Loading scores: A graph of the loadings for the first three principal components is displayed below the plot of the cumulative explained variance. The horizontal axis represents the original features (each Raman shift value), and the vertical axis represents the loading score.
+
+## Method
+
+PCA centers and scales the spectra and finds orthogonal directions that maximize variance:
+
+$$Z=\frac{X-\mu}{\sigma}$$
+
+The projected scores are:
+
+$$T=ZW$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Select Horizontal PC | Tunable | Principal component shown on the x-axis |
+| Select Vertical PC | Tunable | Principal component shown on the y-axis |
+| Coloring by setting labels | Tunable | Uses label data from Data Upload when enabled |
+| Scaling | Fixed | Standard scaling before PCA |
+| Number of components | Fixed | Limited by sample count and feature count |
 
 ## References
 

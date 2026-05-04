@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Clustermap
-parent: Analytics Features
+parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Clustermap/
-nav_order: 7
+nav_order: 3
 ---
 
 # Hierarchically-clustered Heatmap
@@ -22,7 +22,7 @@ nav_order: 7
 
 Hierarchical clustering seeks to group samples based on their similarity to each other, organizing them into multiple categories that can be used for further analysis. Samples are grouped together one at a time and a graph is displayed showing which samples combined and in which order. The user has the option to view a heatmap that provides a colorful visualization of the data from each sample, arranged to bring out the contrast between data in distant groups.
 
-## How to Use
+## How to use
 
 0. In the analytics page, after processing your data, select “Hierarchically-clustered Heatmap” from the drop-down menu on the left sidebar.
 1. Select whether you would like to see a colored heatmap of your data using the toggle labeled “Show clustered heatmap.” By default, this option is turned on. If turned off, a plot of the Ward distances between clustered spectra will be made visible instead.
@@ -52,6 +52,22 @@ Hierarchical clustering seeks to group samples based on their similarity to each
     2. After finding the new distances, the two groups with the smallest distance are again chosen to be merged, and the distances are updated again using the formula above. This process repeats until all samples are combined into a single group.
 - Colored heatmap: If the “Show clustered heatmap” toggle is turned on, a heatmap of the data is displayed such that each sample is laid out side by side, and the vertical axis represents Raman shift (lower frequencies towards the top). Intensities are visualized using color. The samples are ordered such that they appear next to samples they are similar to. Above the plot, a dendrogram is drawn that shows how each sample was merged into groups with each other.
 - Dendrogram view: If the “Show clustered heatmap” toggle is turned off, the dendrogram created during clustering is enlarged, and the Ward distances at each step are plotted on the vertical axis. The “Ward distance” refers to the distance between the two merged groups at each step. Large jumps in the Ward distance from one step to another indicate that the two merged groups were not very similar to each other. Likewise, smaller jumps in the Ward distance indicate that the two groups were relatively similar.
+
+## Method
+
+The default distance between spectra is Euclidean:
+
+$$d(x,y)=\sqrt{\sum_i (x_i-y_i)^2}$$
+
+Ward linkage merges clusters to minimize within-cluster variance:
+
+$$\Delta(A,B)=\frac{|A||B|}{|A|+|B|}\lVert \bar{x}_A-\bar{x}_B\rVert^2$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Show clustered heatmap | Tunable | Boolean toggle, default `True` |
+| Linkage method | Fixed | Ward linkage |
+| Heatmap output | Fixed | Clustered heatmap when enabled; dendrogram view when disabled |
 
 ## References
 

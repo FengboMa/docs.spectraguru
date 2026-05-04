@@ -19,7 +19,7 @@ nav_order: 2
 
 ---
 
-## How to Use
+## How to use
 
 To apply 1D FFT smoothening to your data:
 
@@ -40,6 +40,22 @@ If using the 1D Fast Fourier Transform (FFT) filter, SpectraGuru uses Numpy's [`
 1. Convert padded data to frequency space using a Fast Fourier Transform. The frequency space represents your data as a sum of waves of different frequencies.
 2. Remove the waves in this space that are above the threshold frequency.
 3. Convert the new frequency space back into readable data using an Inverse Fast Fourier Transform.
+
+## Method
+
+SpectraGuru preserves frequencies up to the cutoff and zeros higher-frequency components:
+
+$$\hat{X}_k =
+\begin{cases}
+X_k & |\nu_k| \le c \\
+0 & |\nu_k| > c
+\end{cases}$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| FFT threshold | Tunable | Default `0.100`, UI range `0.001`-`10.000` |
+| Padding method | Tunable | `mirror`, `edge`, or `zero` |
+| Transform | Fixed | NumPy FFT followed by inverse FFT |
 
 ## References
 

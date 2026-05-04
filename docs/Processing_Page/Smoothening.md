@@ -25,7 +25,8 @@ The *smoothening* function in SpectraGuru is a crucial tool for reducing noise a
 
 ## Behavior
 
-The Smoothening function applies either the Savitzky-Golay filter or the 1D Fast Fourier Transform filter to refine spectral data:
+The Smoothening function applies one selected smoothing method to refine spectral data:
 - The Savitzky-Golay filter smooths spectra using a polynomial fit within a defined window.
 - The 1D FFT filter removes high-frequency noise by filtering spectra in the frequency domain based on a cutoff threshold.
-
+- The Median filter replaces each point with a local median value to reduce isolated spikes.
+- Wavelet Denoising shrinks wavelet detail coefficients and reconstructs smoother spectra.

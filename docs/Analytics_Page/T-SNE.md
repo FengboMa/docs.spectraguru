@@ -1,10 +1,10 @@
 ---
 layout: default
 title: T-SNE
-parent: Analytics Features
+parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/T-SNE/
-nav_order: 9
+nav_order: 2
 ---
 
 # T-distributed Stochastic Neighbor Embedding (t-SNE)
@@ -22,9 +22,9 @@ nav_order: 9
 
 T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reduction algorithm that preserves the clustering of high-dimensional data. In other words, T-SNE is a way to visualize data that cannot be plotted traditionally in two or three dimensions. This is useful for understanding which samples are most similar to each other. However, unlike PCA, t-SNE generally produces plots where the axes do not encode any meaningful information on their own, since the focus is simply to preserve the relative distance between data points.
 
-## How to Use
+## How to use
 
-0. In the analytics page, after processing your data, select “T-SNE Dimensionality Reduction” from the drop-down menu on the left sidebar.
+0. In the analytics page, after processing your data, select “T-SNE Dimensionality Reduction-Beta” from the drop-down menu on the left sidebar.
 1. Use the slider labeled “t-SNE Perplexity” to set the perplexity used by the t-SNE algorithm.
 2. Use the slider labeled “t-SNE Maximum number of iterations” to set the maximum number of iterations the t-SNE algorithm performs before stopping. This can be useful for large data sets which may be computationally expensive to process.
 3. The plot labeled “t-SNE Visualization” is a projection of all of your samples into 2 dimensions. The horizontal and vertical axes do not encode any meaningful information; instead, the plot is a visualization tool meant to separate the samples into different clusters based on their similarity.
@@ -80,6 +80,19 @@ T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reductio
     6. Minimize $D_{KL}(s \vert\vert t)$ by using gradient descent, where the embedding space varies. This will take multiple iterations, and each projected point $Q$ as well as the new t-distribution $t(i, j)$ will have to be updated after each iteration, meaning this process is somewhat computationally expensive. The process stops when either a minimum is found (i.e. the length of the gradient vector is close to `0`) or the maximum number of iterations is reached.
     7. The output of this algorithm is the 2-dimensional embedding space (i.e the set of projected points $Q$) representing your data after the final iteration of gradient descent.
 - User control: The user controls both the perplexity and maximum number of iterations by adjusting the sliders located on the left sidebar. The perplexity ranges from `1` to `N-1`, where `N` is the number of samples. The maximum number of iterations ranges from `200` to `1000`.
+
+## Method
+
+t-SNE constructs pairwise similarities in the original space and in the two-dimensional embedding, then minimizes their divergence:
+
+$$D_{KL}(P\Vert Q)=\sum_{i,j}p_{ij}\log\frac{p_{ij}}{q_{ij}}$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| t-SNE Perplexity | Tunable | Slider from `1` to `N-1`; default `2` |
+| t-SNE Maximum number of iterations | Tunable | Slider `200`-`1000`; default `500` |
+| Output dimensions | Fixed | 2D embedding |
+| Labels | Fixed | Label data is used for coloring when available |
 
 ## References
 

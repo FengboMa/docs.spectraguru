@@ -19,7 +19,7 @@ nav_order: 2
 
 ---
 
-## How to Use
+## How to use
 
 To use ModPoly for baseline removal:
 
@@ -34,6 +34,21 @@ To use ModPoly for baseline removal:
 ModPoly fits a polynomial function to estimate and subtract the baseline from the spectra.
 
 A polynomial function with degree specified by the user is iteratively fitted to the data until it either stops making sufficient progress each iteration or reaches the maximum number of iterations. This polynomial is treated as the baseline and subtracted from the original data.
+
+## Method
+
+ModPoly estimates the baseline as a polynomial of user-selected degree:
+
+$$b(x)=\sum_{k=0}^{d} a_k x^k$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| ModPoly Polynomial degree | Tunable | Default `5`, UI range `1`-`20` |
+| Baseline action | Fixed | Fitted baseline is subtracted from each selected spectrum |
+
+## References
+
+1. Lieber, C. A., & Mahadevan-Jansen, A. (2003). Automated method for subtraction of fluorescence from biological Raman spectra. *Applied Spectroscopy*, 57(11), 1363-1367. https://doi.org/10.1366/000370203322554518
 
 ---
 

@@ -19,7 +19,7 @@ nav_order: 1
 
 ---
 
-## How to Use
+## How to use
 
 To use AirPLS for baseline removal:
 
@@ -37,6 +37,20 @@ To use AirPLS for baseline removal:
 AirPLS iteratively adjusts the baseline using a penalized least squares approach to smooth the background while preserving peaks.
 
 A background vector is repeatedly adjusted according to how well it fits with a *weighted* version of the data. The weights change each iteration, and peaks in the data are intentionally given low weights so that they are less likely to be interfered with after baseline removal. AirPLS keeps refining the background vector until it is within the tolerance (tau) of the weighted data or it has reached the maximum number of iterations.
+
+## Method
+
+AirPLS estimates a smooth baseline by solving a penalized weighted least-squares problem:
+
+$$\min_z \sum_i w_i(y_i-z_i)^2 + \lambda \lVert D z\rVert^2$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| AirPLS lambda | Tunable | Default `100`, UI range `1`-`1000000` |
+| AirPLS p-order | Tunable | Default `1`, UI range `1`-`10` |
+| AirPLS maximum iterations | Tunable | Default `15`, UI range `5`-`1000` |
+| AirPLS tolerance | Tunable | Default `0.001` |
+| Baseline action | Fixed | Estimated baseline is subtracted from each selected spectrum |
 
 ## References
 

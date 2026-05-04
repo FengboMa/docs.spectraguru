@@ -19,7 +19,7 @@ nav_order: 3
 
 ---
 
-## How to Use
+## How to use
 
 To use Gaussian-Lorentzian Fitting for baseline removal:
 
@@ -48,6 +48,24 @@ $$
 $$
 
 where $S$ is the area under the curve, and $\gamma$ is related to the width of the peak. The Gaussian and Lorentzian curves are combined simply by adding them together; this is the curve tweaked by the algorithm to be fitted to your data and subtracted off as a baseline.
+
+## Method
+
+SpectraGuru fits a mixed Gaussian-Lorentzian baseline over the user-selected fitting ranges:
+
+$$b(x)=G(x;A,\mu,\sigma)+L(x;S,\mu,\gamma)$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Number of fitting ranges | Tunable | Default `2`, UI range `2`-`10` |
+| Start/end range bounds | Tunable | Clipped to dataset Raman shift bounds and checked for overlap |
+| Curve fitting | Fixed | Nonlinear least-squares fitting with bounded user ranges |
+| Baseline action | Fixed | Fitted baseline is subtracted from each selected spectrum |
+
+## References
+
+1. Chen, H., et al. (2022). Rapid and quantitative detection of respiratory viruses using surface-enhanced Raman spectroscopy and machine learning. *Biosensors and Bioelectronics*, 202, 114721. https://doi.org/10.1016/j.bios.2022.114721
+2. SciPy Developers. `scipy.optimize.curve_fit`. https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html
 
 ---
 

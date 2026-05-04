@@ -19,7 +19,7 @@ nav_order: 1
 
 ---
 
-## How to Use
+## How to use
 
 To normalize your data by area:
 
@@ -37,6 +37,21 @@ S(x)=\frac{I(x)}{\sum_{i=1}^n \frac{1}{2}\left(I(x_i)+I(x_{i-1})\right)\left(x_i
 $$
 
 where $I(x)$ is the intensity observed at Ramanshift $x$, and $n$ is the number of Ramanshift values observed for a given spectrum.
+
+## Method
+
+The implementation divides each selected spectrum by its trapezoidal area over Raman shift:
+
+$$I_{\text{norm}}(x)=\frac{I(x)}{\int I(x)\,dx}$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Method choice | Tunable | Selected as **Normalize by area** |
+| Integration | Fixed | Trapezoidal area using the Raman shift column |
+
+## References
+
+1. SpectraGuru implementation, self-implemented area normalization.
 
 ---
 

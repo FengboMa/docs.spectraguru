@@ -22,7 +22,7 @@ nav_order: 6
 
 SpectraGuru offers a Gaussian Peak Fitting feature, which fits Gaussian curves (normal distributions) to your data around the most prominent peaks. This feature is useful for decompsing important peaks into simplified components that can be used for further analysis, including AI training. Users can also introduce a constant baseline, which is helpful for peaks whose bases are highly raised above the `intensity=0` axis. However, for the best results, it is *highly recommended* that you perform baseline removal in the preprocessing page before using Gaussian Peak Fitting.
 
-## How to Use
+## How to use
 
 0. In the analytics page, after processing your data, select "Gaussian Peak Fitting" from the dropdown menu on the left sidebar.
 1. Use the upper textbox to specify the number of peaks in your data to analyze (defaults to `3`, maximum is `20`).
@@ -61,9 +61,21 @@ SpectraGuru offers a Gaussian Peak Fitting feature, which fits Gaussian curves (
     where $c_P$ is the center of the peak and $w_P$ is the width of the peak. The purpose of the modified sigmoid is to prevent the Gaussian curves from trying to fit to data far from the peak itself ($S(x)$ is close to $0$ when $\lvert x-c_P\rvert$ is far from $0$). This ensures that irrelevant data does not interfere with the fit around the peak.
 - Display: After calculating the optimal fit for each peak, the final results are displayed on a plot alongside the original data. The sum of all Gaussian curves is also plotted with the label `GSUM`. Underneath the plot is a table containing the resulting fit data, where Gaussian curve intensities are rounded to four decimal places. You can download this data as a CSV file by clicking the button labeled "Download Gaussian Fit data as CSV."
 
+## Method
+
+The fitted peak model is a sum of Gaussian components:
+
+$$\hat{I}(x)=\sum_{k=1}^{K} A_k\exp\left(-\frac{(x-\mu_k)^2}{2\sigma_k^2}\right)$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Selected peaks | Tunable | Derived from the selected peak fitting workflow |
+| Component shape | Fixed | Gaussian components |
+| Fitting routine | Fixed | SciPy nonlinear curve fitting |
+
 ## References
 
 SpectraGuru uses SciPy's [`optimize.least_squares`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html) function to find the optimal Gaussian curves for your data.
 
 1. Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., ... SciPy 1.0 Contributors. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. Nature Methods, 17(3), 261–272. https://doi.org/10.1038/s41592-019-0686-2
-    
+
