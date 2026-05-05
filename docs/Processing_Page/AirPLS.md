@@ -19,6 +19,10 @@ nav_order: 1
 
 ---
 
+## Introduction
+
+Adaptive Iteratively Reweighted Penalized Least Squares (AirPLS) estimates a smooth baseline by iteratively reweighting peaks and background points. It is useful for removing broad background trends while preserving sharper spectral peaks.
+
 ## How to use
 
 To use AirPLS for baseline removal:

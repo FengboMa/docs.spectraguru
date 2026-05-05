@@ -9,6 +9,18 @@ nav_order: 1
 # Spectra Simulation
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Introduction
+
+Spectra Simulation generates synthetic Raman-like spectra with configurable peak structure, optional baseline, optional noise, and downloadable output.
+
 ## How to use
 
 1. Open **Toolbox Page**.

@@ -19,6 +19,10 @@ nav_order: 2
 
 ---
 
+## Introduction
+
+The 1D Fast Fourier Transform (FFT) Filter smooths spectra by removing high-frequency components after transforming the signal into the frequency domain.
+
 ## How to use
 
 To apply 1D FFT smoothening to your data:

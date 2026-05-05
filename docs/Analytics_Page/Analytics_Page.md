@@ -9,6 +9,16 @@ permalink: /docs/Analytics_Page
 # Analytics Page
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Introduction
+
 The Analytics Page is for extracting useful information from processed spectra using general analytics and machine learning methods. It includes average and interval plots, derivative analysis, FFT, correlation heatmaps, peak tools, clustering, dimensionality reduction, and supervised classification.
 
 ## General Operation

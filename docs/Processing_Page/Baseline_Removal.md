@@ -21,7 +21,7 @@ nav_order: 5
 
 ## Introduction
 
-The Baseline Removal function in SpectraGuru is designed to eliminate background noise from spectral data, improving the accuracy of signal interpretation and making it easier to identify peaks and trends. A "baseline" refers to a low-frequency trend in your data that may distract from the more interesting and informative features of your data. Baselines may be affected by instrumental drift, temperature changes, or other environmental factors during measurement. SpectraGuru provides AirPLS, ModPoly, Gaussian-Lorentzian Fitting, SNIP, and ALS baseline removal.
+The Baseline Removal parent page groups algorithms that estimate and subtract broad background trends from spectra. SpectraGuru includes AirPLS for adaptive reweighted smoothing, ModPoly for polynomial baseline fitting, Gaussian-Lorentzian Fitting for range-based curve fitting, SNIP for iterative peak clipping, and ALS for asymmetric penalized least-squares smoothing.
 
 ## Behavior
 

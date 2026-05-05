@@ -19,6 +19,10 @@ nav_order: 2
 
 ---
 
+## Introduction
+
+Normalization by Peak rescales each spectrum so its maximum intensity equals 1.
+
 ## How to use
 
 To normalize your data by peak:

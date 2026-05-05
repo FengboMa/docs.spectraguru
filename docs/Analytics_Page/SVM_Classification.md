@@ -1,14 +1,26 @@
 ---
 layout: default
-title: SVM Classification
+title: SVM
 parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Machine_Learning_Feature/SVM_Classification/
 nav_order: 6
 ---
 
-# Support Vector Machine(SVM) Classification
+# Support Vector Machine (SVM) Classification
 {: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Introduction
+
+Support Vector Machine (SVM) is a supervised classifier that separates labeled spectra using a margin-based decision boundary.
 
 ## How to use
 

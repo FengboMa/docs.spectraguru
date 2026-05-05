@@ -9,11 +9,19 @@ nav_order: 6
 # Analytics Features
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ---
 
-## Analytics Features Introduction
+---
 
-Overview of the analytics features on this page.
+## Introduction
+
+Analytics features summarize, transform, compare, and fit processed spectra. General analytics includes average and interval plots, derivative analysis, FFT, correlation heatmaps, peak identification, and Gaussian peak fitting. Machine learning methods are grouped separately under Machine Learning Feature.
 
 | Feature                                             | Utility Overview                                                                         | Documentation    | Video Tutorial |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------|--------------|-----------|

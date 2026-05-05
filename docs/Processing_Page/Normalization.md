@@ -21,4 +21,4 @@ nav_order: 6
 
 ## Introduction
 
-The Normalization feature in SpectraGuru standardizes spectral data and eliminates scale-dependent variations, ensuring that spectra with different intensities or measurement conditions can be meaningfully compared. SpectraGuru offers three normalization methods: area-based, peak-based, and min/max-based.
+The Normalization parent page groups algorithms that rescale spectra for comparison. SpectraGuru includes Area normalization to scale by integrated signal, Peak normalization to scale by maximum intensity, and Min-Max normalization to map each spectrum to a 0-1 range.

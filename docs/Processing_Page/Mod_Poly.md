@@ -19,6 +19,10 @@ nav_order: 2
 
 ---
 
+## Introduction
+
+Modified Polynomial Fitting (ModPoly) estimates a spectral baseline with a polynomial curve and subtracts it from selected spectra.
+
 ## How to use
 
 To use ModPoly for baseline removal:

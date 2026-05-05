@@ -9,6 +9,14 @@ nav_order: 6
 # Processing Features
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 <!-- ## Table of contents
 {: .no_toc .text-delta }
 
@@ -17,9 +25,9 @@ nav_order: 6
 
 ---
 
-## Processing Features Introduction
+## Introduction
 
-Overview of the processing features on this page.
+Processing features prepare uploaded spectra before visualization or analytics. The available algorithm groups cover interpolation, cropping, despiking, smoothing, baseline removal, normalization, and outlier removal.
 
 | Feature             | Sub Functions                                      | Documentation | Video Tutorial |
 |---------------------|---------------------------------------------------|-----------|--------------------|

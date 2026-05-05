@@ -14,6 +14,12 @@ markdown: kramdown
 # This is just a flag we read in head_custom.html; it does NOT load a gem.
 math: katex
 
+exclude:
+  - temp/
+  - vendor/
+  - .bundle/
+  - .DS_Store
+
 
 # aux_links:
 #   Template Repository: https://github.com/just-the-docs/just-the-docs-template

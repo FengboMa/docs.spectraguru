@@ -10,6 +10,18 @@ nav_order: 4
 # Wavelet Denoising
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Introduction
+
+Wavelet Denoising reduces spectral noise by decomposing a spectrum into wavelet coefficients, shrinking high-frequency detail coefficients, and reconstructing the signal.
+
 ## How to use
 
 1. Upload data, then open **Processing Page**.

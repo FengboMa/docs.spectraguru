@@ -9,7 +9,17 @@ nav_order: 7
 # Machine Learning Feature
 {: .no_toc }
 
-Machine learning features use the spectra currently available in Analytics. For supervised classification, SpectraGuru also requires label data created on the Data Upload page.
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Introduction
+
+Machine Learning Feature groups algorithms that reduce dimensionality, cluster spectra, or classify labeled spectra. PCA and t-SNE help visualize high-dimensional spectra, HCA groups similar spectra, and RF/KNN/SVM perform supervised classification from labels created during upload.
 
 ## Label setup
 
@@ -27,7 +37,7 @@ Classification pages require every selected spectrum to have a label and require
 | --- | --- |
 | [Principal Components Analysis (PCA)-Beta](../Analytics_Features/Principal_Component_Analysis/) | Linear dimensionality reduction and loading inspection |
 | [T-SNE Dimensionality Reduction-Beta](../Analytics_Features/T-SNE/) | Nonlinear 2D neighborhood visualization |
-| [Hierarchically-clustered Heatmap](../Analytics_Features/Clustermap/) | Ward-linkage clustering and heatmap/dendrogram display |
-| [Random Forest(RF) Classification](Random_Forest_Classification/) | Supervised ensemble classification |
-| [K-Nearest Neighbors(KNN) Classification](KNN_Classification/) | Supervised distance-based classification |
-| [Support Vector Machine(SVM) Classification](SVM_Classification/) | Supervised margin-based classification |
+| [Hierarchical Cluster Analysis (HCA)](../Analytics_Features/Clustermap/) | Ward-linkage clustering and heatmap/dendrogram display |
+| [Random Forest (RF) Classification](Random_Forest_Classification/) | Supervised ensemble classification |
+| [K-Nearest Neighbors (KNN) Classification](KNN_Classification/) | Supervised distance-based classification |
+| [Support Vector Machine (SVM) Classification](SVM_Classification/) | Supervised margin-based classification |

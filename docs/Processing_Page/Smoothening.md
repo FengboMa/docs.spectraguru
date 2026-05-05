@@ -21,7 +21,7 @@ nav_order: 4
 
 ## Introduction
 
-The *smoothening* function in SpectraGuru is a crucial tool for reducing noise and enhancing spectral signals. By averaging adjacent data points, it helps produce a clearer representation of spectral data, making trends more discernible and reducing fluctuations caused by noise.
+The Smoothening parent page groups algorithms that reduce short-scale noise before downstream processing or analytics. SpectraGuru includes Savitzky-Golay filtering for polynomial local smoothing, FFT filtering for low-pass frequency-domain smoothing, Median Filter for spike-resistant local smoothing, and Wavelet Denoising for coefficient-shrinkage smoothing.
 
 ## Behavior
 

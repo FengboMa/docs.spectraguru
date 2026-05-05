@@ -10,6 +10,18 @@ nav_order: 3
 # Median Filter
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Introduction
+
+Median Filter is a smoothing algorithm that replaces each point with a local median value to reduce isolated spikes and narrow outliers.
+
 ## How to use
 
 1. Upload data, then open **Processing Page**.

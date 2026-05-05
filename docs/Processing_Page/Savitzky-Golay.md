@@ -19,6 +19,10 @@ nav_order: 1
 
 ---
 
+## Introduction
+
+Savitzky-Golay Filter smooths spectra by fitting a local polynomial in a moving window and evaluating the fitted center point.
+
 ## How to use
 
 To apply Savitzky-Golay smoothening to your data:

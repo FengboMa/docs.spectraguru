@@ -19,6 +19,10 @@ nav_order: 1
 
 ---
 
+## Introduction
+
+Normalization by Area rescales each spectrum by its integrated area so spectra with different total signal levels can be compared.
+
 ## How to use
 
 To normalize your data by area:

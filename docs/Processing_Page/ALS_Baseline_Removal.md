@@ -1,14 +1,26 @@
 ---
 layout: default
-title: ALS Baseline Removal
+title: ALS
 parent: Baseline Removal
 grand_parent: Processing Feature
 permalink: /docs/Processing_Page/Processing_Feature/Baseline_Removal/ALS_Baseline_Removal/
 nav_order: 4
 ---
 
-# Asymmetric Least Squares(ALS) Baseline Removal
+# Asymmetric Least Squares (ALS)
 {: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Introduction
+
+Asymmetric Least Squares (ALS) is a baseline removal algorithm for estimating a smooth background beneath spectral peaks. SpectraGuru uses ALS when the user wants an adjustable smoothness penalty and asymmetric peak weighting.
 
 ## How to use
 

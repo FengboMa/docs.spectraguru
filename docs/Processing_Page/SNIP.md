@@ -7,8 +7,20 @@ permalink: /docs/Processing_Page/Processing_Feature/Baseline_Removal/SNIP/
 nav_order: 5
 ---
 
-# SNIP Baseline Removal
+# Sensitive Nonlinear Iterative Peak-clipping (SNIP)
 {: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Introduction
+
+Sensitive Nonlinear Iterative Peak-clipping (SNIP) estimates a slowly varying spectral background by repeatedly clipping peak-like structures from a transformed spectrum.
 
 ## How to use
 

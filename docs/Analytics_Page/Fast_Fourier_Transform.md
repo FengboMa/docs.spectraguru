@@ -10,6 +10,18 @@ nav_order: 4
 # Fast Fourier Transform (FFT)
 {: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Introduction
+
+Fast Fourier Transform (FFT) converts a selected spectrum from the Raman shift domain into the frequency domain so periodic or high-frequency structure can be inspected.
+
 ## How to use
 
 1. Upload data and finish preprocessing if needed.

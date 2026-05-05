@@ -19,6 +19,10 @@ nav_order: 3
 
 ---
 
+## Introduction
+
+Normalization by Min/Max rescales each spectrum to a 0-1 intensity range using its own minimum and maximum values.
+
 ## How to use
 
 To normalize your data by minimum & maximum:
