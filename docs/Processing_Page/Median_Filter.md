@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Median Filter
-parent: Smoothening
+parent: Smoothing
 grand_parent: Processing Feature
-permalink: /docs/Processing_Page/Processing_Feature/Smoothening/Median_Filter/
+permalink: /docs/Processing_Page/Processing_Feature/Smoothing/Median_Filter/
 nav_order: 3
 ---
 
@@ -25,8 +25,8 @@ Median Filter is a smoothing algorithm that replaces each point with a local med
 ## How to use
 
 1. Upload data, then open **Processing Page**.
-2. Enable **Smoothening**.
-3. In **Select your smoothening function**, choose **Median filter**.
+2. Enable **Smoothing**.
+3. In **Select smoothing function**, choose **Median filter**.
 4. Set **Window size** and **Padding method**.
 5. Apply the processing workflow to update the spectra.
 

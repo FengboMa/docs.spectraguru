@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gaussian-Lorentzian Fitting
+title: Gaussian-Lorentzian fitting
 parent: Baseline Removal
 grand_parent: Processing Feature
 ancestor: Processing Page
@@ -8,7 +8,7 @@ permalink: /docs/Processing_Page/Processing_Feature/Baseline_Removal/Gaussian-Lo
 nav_order: 3
 ---
 
-# Gaussian-Lorentzian Fitting
+# Gaussian-Lorentzian fitting
 {: .no_toc }
 
 ## Table of contents
@@ -21,13 +21,13 @@ nav_order: 3
 
 ## Introduction
 
-Gaussian-Lorentzian Fitting estimates a baseline from user-selected fitting ranges using a mixed peak-shape model. It is useful when the baseline can be approximated from selected spectral regions.
+Gaussian-Lorentzian fitting estimates a baseline from user-selected fitting ranges using a mixed peak-shape model. It is useful when the baseline can be approximated from selected spectral regions.
 
 ## How to use
 
 1. Upload data and open **Processing Page**.
-2. Enable **Baseline Removal**.
-3. In **Select your baseline removal function**, choose **Gaussian-Lorentzian Fitting**.
+2. Enable **Baseline removal**.
+3. In **Select baseline removal function**, choose **Gaussian-Lorentzian fitting**.
 4. Set **Number of fitting ranges**.
 5. Enter the **Start of range** and **End of range** values.
 6. Click **Apply fitting ranges**, then process the data.

@@ -28,7 +28,7 @@ Adaptive Iteratively Reweighted Penalized Least Squares (AirPLS) estimates a smo
 To use AirPLS for baseline removal:
 
 0. Upload data and select the spectra you want to process.
-1. Navigate to the sidebar and turn on the "Baseline Removal" toggle.
+1. Navigate to the sidebar and turn on the **Baseline removal** toggle.
 2. Select "AirPLS" from the drop-down menu.
 3. Configure parameters:
     - Set lambda (defaults to `100`) - controls the smoothness of the estimated baseline.

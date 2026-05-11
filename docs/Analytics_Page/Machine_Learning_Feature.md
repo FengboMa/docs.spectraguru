@@ -19,7 +19,7 @@ nav_order: 7
 
 ## Introduction
 
-Machine Learning Feature groups algorithms that reduce dimensionality, cluster spectra, or classify labeled spectra. PCA and t-SNE help visualize high-dimensional spectra, HCA groups similar spectra, and RF/KNN/SVM perform supervised classification from labels created during upload.
+Machine Learning Feature groups algorithms that reduce dimensionality, cluster spectra, or classify labeled spectra. Principal Components Analysis (PCA) and T-SNE Dimensionality Reduction help visualize high-dimensional spectra, Hierarchically-clustered Heatmap groups similar spectra, and Random Forest(RF), K-Nearest Neighbors(KNN), and Support Vector Machine(SVM) perform supervised classification from labels created during upload.
 
 ## Label setup
 
@@ -35,9 +35,9 @@ Classification pages require every selected spectrum to have a label and require
 
 | Method | Use |
 | --- | --- |
-| [Principal Components Analysis (PCA)-Beta](../Analytics_Features/Principal_Component_Analysis/) | Linear dimensionality reduction and loading inspection |
-| [T-SNE Dimensionality Reduction-Beta](../Analytics_Features/T-SNE/) | Nonlinear 2D neighborhood visualization |
-| [Hierarchical Cluster Analysis (HCA)](../Analytics_Features/Clustermap/) | Ward-linkage clustering and heatmap/dendrogram display |
-| [Random Forest (RF) Classification](Random_Forest_Classification/) | Supervised ensemble classification |
-| [K-Nearest Neighbors (KNN) Classification](KNN_Classification/) | Supervised distance-based classification |
-| [Support Vector Machine (SVM) Classification](SVM_Classification/) | Supervised margin-based classification |
+| [Principal Components Analysis (PCA)](../Analytics_Features/Principal_Component_Analysis/) | Linear dimensionality reduction and loading inspection |
+| [T-SNE Dimensionality Reduction](../Analytics_Features/T-SNE/) | Nonlinear 2D neighborhood visualization |
+| [Hierarchically-clustered Heatmap](../Analytics_Features/Clustermap/) | Ward-linkage clustering and heatmap/dendrogram display |
+| [Random Forest(RF) Classification](Random_Forest_Classification/) | Supervised ensemble classification |
+| [K-Nearest Neighbors(KNN) Classification](KNN_Classification/) | Supervised distance-based classification |
+| [Support Vector Machine(SVM) Classification](SVM_Classification/) | Supervised margin-based classification |

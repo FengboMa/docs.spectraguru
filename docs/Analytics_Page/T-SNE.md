@@ -1,13 +1,13 @@
 ---
 layout: default
-title: t-SNE
+title: T-SNE Dimensionality Reduction
 parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/T-SNE/
 nav_order: 2
 ---
 
-# T-distributed Stochastic Neighbor Embedding (t-SNE)
+# T-SNE Dimensionality Reduction
 {: .no_toc }
 
 ## Table of contents
@@ -20,13 +20,13 @@ nav_order: 2
 
 ## Introduction
 
-T-distributed Stochastic Neighbor Embedding (t-SNE) is a nonlinear dimensionality-reduction algorithm for visualizing high-dimensional spectra in two dimensions. It is useful for inspecting local grouping patterns, but its axes do not have direct physical meaning.
+T-SNE Dimensionality Reduction is a nonlinear dimensionality-reduction algorithm for visualizing high-dimensional spectra in two dimensions. It is useful for inspecting local grouping patterns, but its axes do not have direct physical meaning.
 
 ## How to use
 
 1. Upload data and finish preprocessing if needed.
 2. Open **Analytics Page**.
-3. In **Select Analytics Plot**, choose **T-SNE Dimensionality Reduction-Beta**.
+3. In **Select Analytics Plot**, choose **T-SNE Dimensionality Reduction**.
 4. Set **t-SNE Perplexity**.
 5. Set **t-SNE Maximum number of iterations**.
 

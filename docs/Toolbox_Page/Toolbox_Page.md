@@ -19,8 +19,9 @@ nav_order: 7
 
 ## Introduction
 
-The Toolbox page contains standalone utilities outside the Processing and Analytics workflows. The current toolbox algorithm is Spectra Simulation, which generates synthetic spectra for testing, demonstration, and workflow validation.
+The Toolbox page contains standalone utilities outside the Processing and Analytics workflows. Current tools include Spectra Simulation for generating synthetic spectra and Peak Assignment Table for browsing a curated research reference table.
 
 | Tool | Documentation |
 | --- | --- |
 | Spectra Simulation | [Spectra Simulation](Toolbox_Page/Spectra_Simulation/) |
+| Peak Assignment Table | [Peak Assignment Table](Toolbox_Page/Peak_Assignment_Table/) |

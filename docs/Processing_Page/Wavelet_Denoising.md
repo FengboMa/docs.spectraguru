@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Wavelet Denoising
-parent: Smoothening
+parent: Smoothing
 grand_parent: Processing Feature
-permalink: /docs/Processing_Page/Processing_Feature/Smoothening/Wavelet_Denoising/
+permalink: /docs/Processing_Page/Processing_Feature/Smoothing/Wavelet_Denoising/
 nav_order: 4
 ---
 
@@ -25,8 +25,8 @@ Wavelet Denoising reduces spectral noise by decomposing a spectrum into wavelet 
 ## How to use
 
 1. Upload data, then open **Processing Page**.
-2. Enable **Smoothening**.
-3. In **Select your smoothening function**, choose **Wavelet Denoising**.
+2. Enable **Smoothing**.
+3. In **Select smoothing function**, choose **Wavelet Denoising**.
 4. Choose **Wavelet denoising method**, **Wavelet family**, and **Decomposition level**.
 5. For **Sardy Block Coordinate Relaxation(BCR)**, set **BCR iterations** and **Robust loss function**.
 6. For **Standard Universal Thresholding**, set **Thresholding mode**.

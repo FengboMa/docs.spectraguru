@@ -25,8 +25,8 @@ Asymmetric Least Squares (ALS) is a baseline removal algorithm for estimating a 
 ## How to use
 
 1. Upload data, then open **Processing Page**.
-2. Enable **Baseline Removal**.
-3. In **Select your baseline removal function**, choose **ALS**.
+2. Enable **Baseline removal**.
+3. In **Select baseline removal function**, choose **ALS**.
 4. Set **ALS lambda**, **ALS asymmetry (p)**, **ALS difference order (d)**, and **ALS maximum iterations**.
 5. Apply the processing workflow to subtract the estimated baseline.
 

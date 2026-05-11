@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Savitzky-Golay Filter
-parent: Smoothening
+parent: Smoothing
 grand_parent: Processing Feature
 ancestor: Processing Page
-permalink: /docs/Processing_Page/Processing_Feature/Smoothening/Savitzky-Golay/
+permalink: /docs/Processing_Page/Processing_Feature/Smoothing/Savitzky-Golay/
 nav_order: 1
 ---
 
@@ -25,18 +25,18 @@ Savitzky-Golay Filter smooths spectra by fitting a local polynomial in a moving 
 
 ## How to use
 
-To apply Savitzky-Golay smoothening to your data:
+To apply Savitzky-Golay smoothing to your data:
 
 0. Upload data and select the spectra you want to process.
-1. Navigate to the sidebar and turn on the "Smoothening" toggle.
-2. Select "Savitzky-Golay filter" from the drop-down menu.
+1. Navigate to the sidebar and turn on the **Smoothing** toggle.
+2. In **Select smoothing function**, choose **Savitzky-Golay filter**.
 3. Configure parameters:
     - Window length (defaults to `15`)
     - Polynomial order (defaults to `2`) - Should be less than window length.
 
 ## Behavior
 
-If "Savitky-Golay filter" is selected, SpectraGuru's smoothening feature applies SciPy's implementation [`signal.savgol_filter`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.savgol_filter.html) to each spectrum, which works as follows:
+If **Savitzky-Golay filter** is selected, SpectraGuru's smoothing feature applies SciPy's implementation [`signal.savgol_filter`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.savgol_filter.html) to each spectrum, which works as follows:
 0. For each Ramanshift value $x$, consider the values between $x-\frac{w}{2}$ and $x+\frac{w}{2}$, where $w$ is the window length.
 1. Try to find the polynomial with order $d$ that best fits with the data centered around $x$. Mathematically speaking, this can be thought of as a minimization of the following expression as the coefficients $a_i$ vary:
 
@@ -62,10 +62,10 @@ $$\hat{y}_i = \sum_{j=-m}^{m} c_j y_{i+j}$$
 
 ## References
 
-SpectraGuru uses SciPy's [`signal.savgol_filter`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.savgol_filter.html) function for Savitzky-Golay smoothening.
+SpectraGuru uses SciPy's [`signal.savgol_filter`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.savgol_filter.html) function for Savitzky-Golay smoothing.
 
 1. Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., ... SciPy 1.0 Contributors. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. Nature Methods, 17(3), 261–272. https://doi.org/10.1038/s41592-019-0686-2
 
 ---
 
-[Back to Smoothening](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Smoothening/)
+[Back to Smoothing](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Smoothing/)

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: HCA
+title: Hierarchically-clustered Heatmap
 parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Clustermap/
 nav_order: 3
 ---
 
-# Hierarchical Cluster Analysis (HCA)
+# Hierarchically-clustered Heatmap
 {: .no_toc }
 
 ## Table of contents
@@ -20,7 +20,7 @@ nav_order: 3
 
 ## Introduction
 
-Hierarchical Cluster Analysis (HCA) groups spectra by similarity and displays the result as a clustered heatmap or dendrogram. In SpectraGuru, this feature uses Ward-linkage clustering to arrange similar spectra near each other.
+Hierarchically-clustered Heatmap groups spectra by similarity and displays the result as a clustered heatmap or dendrogram. In SpectraGuru, this feature uses Ward-linkage clustering to arrange similar spectra near each other.
 
 ## How to use
 

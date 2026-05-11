@@ -25,8 +25,8 @@ Sensitive Nonlinear Iterative Peak-clipping (SNIP) estimates a slowly varying sp
 ## How to use
 
 1. Upload data, then open **Processing Page**.
-2. Enable **Baseline Removal**.
-3. In **Select your baseline removal function**, choose **SNIP**.
+2. Enable **Baseline removal**.
+3. In **Select baseline removal function**, choose **SNIP**.
 4. Set **SNIP Iterations**.
 5. Apply the processing workflow to subtract the estimated baseline.
 

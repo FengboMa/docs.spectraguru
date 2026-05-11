@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Outlier Removal
+title: Outlier removal
 parent: Processing Feature
 grand_parent: Processing Page
 permalink: /docs/Processing_Page/Processing_Feature/Outlier_Removal/
 nav_order: 7
 ---
 
-# Outlier Removal
+# Outlier removal
 {: .no_toc }
 
 ## Table of contents
@@ -20,14 +20,14 @@ nav_order: 7
 
 ## Introduction
 
-The Outlier Removal feature in SpectraGuru is designed to identify and eliminate spectra that deviate significantly from the rest of the samples. This process improves the quality of spectral analysis by ensuring that anomalies or extreme values do not distort the results. There are three thresholds used to identify outliers: single threshold, distance threshold, and correlation threshold.
+The Outlier removal feature in SpectraGuru is designed to identify and eliminate spectra that deviate significantly from the rest of the samples. This process improves the quality of spectral analysis by ensuring that anomalies or extreme values do not distort the results. There are three thresholds used to identify outliers: single threshold, distance threshold, and correlation threshold.
 
 ## How to use
 
 To remove outlying samples from your data:
 
 0. Upload data and select the spectra to be processed.
-1. Navigate to the sidebar and turn on the "Outlier Removal" toggle.
+1. Navigate to the sidebar and turn on the **Outlier removal** toggle.
 2. Adjust threshold values for one or more of the following detection criteria:
     - Single threshold: The maximum number of standard deviations from the mean any data point in a particular spectrum can be before being considered an outlier.
     - Distance threshold: The maximum number of standard deviations a spectrum can be from the average spectrum.
@@ -52,9 +52,9 @@ $$\text{remove}(s)=I(M_s>T_s)\lor I(D_s>T_d)\lor I(C_s<T_c)$$
 
 | Parameter | Tunable or fixed | Implementation |
 | --- | --- | --- |
-| Outlier Removal Single Threshold | Tunable | Intensity-based threshold |
-| Outlier Removal Distance Threshold | Tunable | Distance-based threshold |
-| Outlier Removal Correlation Threshold | Tunable | Correlation-based threshold |
+| Outlier removal single threshold | Tunable | Intensity-based threshold |
+| Outlier removal distance threshold | Tunable | Distance-based threshold |
+| Outlier removal correlation threshold | Tunable | Correlation-based threshold |
 | Output | Fixed | Spectra flagged by any enabled criterion are removed from the processed dataset |
 
 ## References

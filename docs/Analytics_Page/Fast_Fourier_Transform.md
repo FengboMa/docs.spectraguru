@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Fast Fourier Transform
+title: Fast Fourier Transform (FFT) analysis
 parent: Analytics Features
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Fast_Fourier_Transform/
 nav_order: 4
 ---
 
-# Fast Fourier Transform (FFT)
+# Fast Fourier Transform (FFT) analysis
 {: .no_toc }
 
 ## Table of contents
@@ -20,13 +20,13 @@ nav_order: 4
 
 ## Introduction
 
-Fast Fourier Transform (FFT) converts a selected spectrum from the Raman shift domain into the frequency domain so periodic or high-frequency structure can be inspected.
+Fast Fourier Transform (FFT) analysis converts a selected spectrum from the Raman shift domain into the frequency domain so periodic or high-frequency structure can be inspected.
 
 ## How to use
 
 1. Upload data and finish preprocessing if needed.
 2. Open **Analytics Page**.
-3. In **Select Analytics Plot**, choose **Fast Fourier Transform (FFT)**.
+3. In **Select Analytics Plot**, choose **Fast Fourier Transform (FFT) analysis**.
 4. Use **Select spectrum for FFT** to choose **Average** or an individual spectrum.
 5. Optionally enable **Subtract average value before FFT**.
 6. Review the FFT plots and use **Download FFT Data as CSV** if you need the transformed data.

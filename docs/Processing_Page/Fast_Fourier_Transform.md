@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Fast Fourier Transform
-parent: Smoothening
+parent: Smoothing
 grand_parent: Processing Feature
 ancestor: Processing Page
-permalink: /docs/Processing_Page/Processing_Feature/Smoothening/Fast_Fourier_Transform/
+permalink: /docs/Processing_Page/Processing_Feature/Smoothing/Fast_Fourier_Transform/
 nav_order: 2
 ---
 
@@ -25,11 +25,11 @@ The 1D Fast Fourier Transform (FFT) Filter smooths spectra by removing high-freq
 
 ## How to use
 
-To apply 1D FFT smoothening to your data:
+To apply 1D FFT smoothing to your data:
 
 0. Upload data and select the spectra you want to process.
-1. Navigate to the sidebar and turn on the "Smoothening" toggle.
-2. Select "1D Fast Fourier Transform filter" from the drop-down menu.
+1. Navigate to the sidebar and turn on the **Smoothing** toggle.
+2. In **Select smoothing function**, choose **1D Fast Fourier Transform filter**.
 3. Configure parameters:
     - FFT threshold (defaults to `0.100`) - The maximum frequency to keep in your data.
     - Padding method (can be "mirror," "edge," or "zero").
@@ -69,4 +69,4 @@ SpectraGuru uses NumPy's [`fft.fft`](https://numpy.org/doc/stable/reference/gene
 
 ---
 
-[Back to Smoothening](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Smoothening/)
+[Back to Smoothing](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Smoothing/)

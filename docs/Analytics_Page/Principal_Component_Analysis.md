@@ -1,13 +1,13 @@
 ---
 layout: default
-title: PCA
+title: Principal Components Analysis (PCA)
 parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Principal_Component_Analysis/
 nav_order: 1
 ---
 
-# Principal Component Analysis (PCA)
+# Principal Components Analysis (PCA)
 {: .no_toc }
 
 ## Table of contents
@@ -20,13 +20,13 @@ nav_order: 1
 
 ## Introduction
 
-Principal Component Analysis (PCA) is a dimensionality-reduction algorithm that projects spectra onto orthogonal components that capture major variance patterns. In SpectraGuru, PCA helps users inspect sample separation, explained variance, and loading patterns.
+Principal Components Analysis (PCA) is a dimensionality-reduction algorithm that projects spectra onto orthogonal components that capture major variance patterns. In SpectraGuru, PCA helps users inspect sample separation, explained variance, and loading patterns.
 
 ## How to use
 
 1. Upload data and finish preprocessing if needed.
 2. Open **Analytics Page**.
-3. In **Select Analytics Plot**, choose **Principal Components Analysis (PCA)-Beta**.
+3. In **Select Analytics Plot**, choose **Principal Components Analysis (PCA)**.
 4. Select **Select Horizontal PC** and **Select Vertical PC** to choose the scatter plot axes.
 5. Toggle **Coloring by setting labels** if label data from Data Upload should color the points.
 

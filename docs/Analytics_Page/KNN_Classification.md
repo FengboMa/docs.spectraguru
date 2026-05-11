@@ -1,13 +1,13 @@
 ---
 layout: default
-title: KNN
+title: K-Nearest Neighbors(KNN) Classification
 parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Machine_Learning_Feature/KNN_Classification/
 nav_order: 5
 ---
 
-# K-Nearest Neighbors (KNN) Classification
+# K-Nearest Neighbors(KNN) Classification
 {: .no_toc }
 
 ## Table of contents
@@ -20,7 +20,7 @@ nav_order: 5
 
 ## Introduction
 
-K-Nearest Neighbors (KNN) is a supervised classifier that assigns each spectrum to the class most supported by nearby labeled spectra.
+K-Nearest Neighbors(KNN) is a supervised classifier that assigns each spectrum to the class most supported by nearby labeled spectra.
 
 ## How to use
 

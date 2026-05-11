@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Random Forest
+title: Random Forest(RF) Classification
 parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Machine_Learning_Feature/Random_Forest_Classification/
 nav_order: 4
 ---
 
-# Random Forest (RF) Classification
+# Random Forest(RF) Classification
 {: .no_toc }
 
 ## Table of contents
@@ -20,7 +20,7 @@ nav_order: 4
 
 ## Introduction
 
-Random Forest (RF) is a supervised ensemble classifier that trains multiple decision trees and combines their class votes.
+Random Forest(RF) is a supervised ensemble classifier that trains multiple decision trees and combines their class votes.
 
 ## How to use
 

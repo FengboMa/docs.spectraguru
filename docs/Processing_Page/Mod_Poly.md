@@ -28,7 +28,7 @@ Modified Polynomial Fitting (ModPoly) estimates a spectral baseline with a polyn
 To use ModPoly for baseline removal:
 
 0. Upload data and select the spectra you want to process.
-1. Navigate to the sidebar and turn on the "Baseline Removal" toggle.
+1. Navigate to the sidebar and turn on the **Baseline removal** toggle.
 2. Select "ModPoly" from the drop-down menu.
 3. Configure parameters:
     - Set polynomial degree (defaults to `5`) - determines the degree of the polynomial fit used for basline correction.
