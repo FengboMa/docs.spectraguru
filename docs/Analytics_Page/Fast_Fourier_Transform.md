@@ -29,11 +29,11 @@ Fast Fourier Transform (FFT) analysis converts a selected spectrum from the Rama
 3. In **Select Analytics Plot**, choose **Fast Fourier Transform (FFT) analysis**.
 4. Use **Select spectrum for FFT** to choose **Average** or an individual spectrum.
 5. Optionally enable **Subtract average value before FFT**.
-6. Review the FFT plots and use **Download FFT Data as CSV** if you need the transformed data.
+6. Review the FFT plots and use **Download FFT analysis data as CSV** if you need the transformed data.
 
 ## Behavior
 
-Analytics FFT converts the selected spectrum from the Raman shift domain into the frequency domain. The page shows the selected input spectrum and the FFT magnitude view, and it exports a CSV containing the FFT data. If **Subtract average value before FFT** is enabled, the selected intensity trace is mean-centered before the transform.
+Analytics FFT converts the selected spectrum from the Raman shift domain into the frequency domain. The page shows six FFT views in this order: Amplitude and Phase, Power and Real + Imaginary, then Real and Imaginary. It also exports a CSV containing the FFT data. If **Subtract average value before FFT** is enabled, the selected intensity trace is mean-centered before the transform.
 
 ## Method
 
@@ -50,7 +50,7 @@ $$x'_n = x_n - \bar{x}$$
 | Select spectrum for FFT | Tunable | `Average` or any selected sample column |
 | Subtract average value before FFT | Tunable | Boolean toggle, default `False` |
 | Input x-axis | Fixed | Raman shift column from the current Analytics dataset |
-| Output | Fixed | FFT plots plus downloadable CSV |
+| Output | Fixed | Six FFT plots plus downloadable CSV |
 
 ## References
 

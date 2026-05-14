@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Spectra Simulation
+title: Spectrum Simulation
 parent: Toolbox Page
 permalink: /docs/Toolbox_Page/Spectra_Simulation/
 nav_order: 1
 ---
 
-# Spectra Simulation
+# Spectrum Simulation
 {: .no_toc }
 
 ## Table of contents
@@ -19,12 +19,12 @@ nav_order: 1
 
 ## Introduction
 
-Spectra Simulation generates synthetic Raman-like spectra with configurable peak structure, optional baseline, optional noise, and downloadable output.
+Spectrum Simulation generates synthetic Raman-like spectra with configurable peak structure, optional baseline, optional noise, and downloadable output.
 
 ## How to use
 
 1. Open **Toolbox Page**.
-2. In **Select Tool**, choose **Spectra Simulation**.
+2. In **Select Tool**, choose **Spectrum Simulation**.
 3. Set **Number of Spectra to Generate**, **Scale**, and **Select Spectra Structure**.
 4. Configure the structure-specific controls for **Distinct**, **Joint**, or **Consecutive** peaks.
 5. Optionally enable **Use Baseline** and choose **Polynomial**, **Exponential**, **Gaussian**, or **Sigmoidal** baseline controls.
@@ -33,7 +33,7 @@ Spectra Simulation generates synthetic Raman-like spectra with configurable peak
 
 ## Behavior
 
-Spectra Simulation creates synthetic Raman-like spectra over the default Raman shift range. Peaks are generated as random Gaussian peaks, optionally arranged as separated peaks, paired regions, or consecutive overlapping regions. The output page shows an interactive line chart and a downloadable CSV.
+Spectrum Simulation creates synthetic Raman-like spectra over the default Raman shift range. Peaks are generated as random Gaussian peaks, optionally arranged as separated peaks, paired regions, or consecutive overlapping regions. The output page shows an interactive line chart and a downloadable CSV.
 
 ## Method
 

@@ -6,7 +6,7 @@ description: "SpectraGuru is a spectroscopy processing and visualization web-bas
 permalink: /
 ---
 
-# Documentation for SpectraGuru - A Spectra Analysis Application
+# Documentation for SpectraGuru - A Spectral Analysis Application
 
 ## What is SpectraGuru?
 

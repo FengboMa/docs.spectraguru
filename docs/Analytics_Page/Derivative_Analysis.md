@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Spectra Derivation
+title: Spectral Derivation
 parent: Analytics Features
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Derivative_Analysis/
 nav_order: 3
 ---
 
-# Spectra Derivation
+# Spectral Derivation
 {: .no_toc }
 
 ## Table of Contents
@@ -24,7 +24,7 @@ SpectraGuru offers a derivative analysis feature that plots the first and second
 
 ## How to use
 
-0. In the analytics page, after processing your data, select “Spectra Derivation” from the drop-down menu on the left sidebar.
+0. In the analytics page, after processing your data, select “Spectral Derivation” from the drop-down menu on the left sidebar.
 1. Select which normalization method you would like to use, if any. So far, only min/max normalization is offered for derivative analysis.
 2. Finally, adjust the Savitzky-Golay parameters (window length and polynomial order) for the derivation process. This will be used to systematically derive your spectra by fitting them to polynomial curves (for more about Savitzky-Golay, see our documentation on [Smoothing](/docs.spectraguru/docs/Processing_Page/Processing_Feature/Smoothing/)).
     - Window length (defaults to `11`): Should be odd. Smaller values are typically better for noisy data, and larger values are typically better for data with sharp peaks.

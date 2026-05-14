@@ -21,13 +21,13 @@ nav_order: 6
 
 ## Introduction
 
-Analytics features summarize, transform, compare, and fit processed spectra. General analytics includes average and interval plots, spectra derivation, FFT analysis, correlation heatmaps, peak identification, and Gaussian peak fitting. Machine learning methods are grouped separately under Machine Learning Feature.
+Analytics features summarize, transform, compare, and fit processed spectra. General analytics includes average and interval plots, spectral derivation, FFT analysis, correlation heatmaps, peak identification, and Gaussian peak fitting. Machine learning methods are grouped separately under Machine Learning Feature.
 
 | Feature                                             | Utility Overview                                                                         | Documentation    | Video Tutorial |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------|--------------|-----------|
 | Average Plot with Original Spectra                  | Visualize original data, visualize standard deviation and mean spectrum                  | [Average Plot](Analytics_Features/Average_Plot/)             |    |
 | Confidence Interval Plot                            | Visualize standard deviation and mean spectrum                                           | [Confidence Interval Plot](Analytics_Features/Confidence_Interval_Plot/)             |   |
-| Spectra Derivation                                  | Visualize the first and second derivatives of your data                                  | [Spectra Derivation](Analytics_Features/Derivative_Analysis/)             |   |
+| Spectral Derivation                                 | Visualize the first and second derivatives of your data                                  | [Spectral Derivation](Analytics_Features/Derivative_Analysis/)             |   |
 | Fast Fourier Transform (FFT) analysis               | Transform one selected spectrum into the frequency domain                                | [Fast Fourier Transform](Analytics_Features/Fast_Fourier_Transform/)             |   |
 | Correlation Heatmap                                 | Quantify similarities between spectra trends in a grid format                            | [Correlation Heatmap](Analytics_Features/Correlation_Heatmap/)             |   |
 | Peak Identification and Stats                       | Identify and classify peaks in spectra intensity                                         | [Peak Identification](Analytics_Features/Peak_Identification/)             |    |

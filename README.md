@@ -1,6 +1,6 @@
 # SpectraGuru Documentation
 
-This is documentation page for SpectraGuru - A Spectra Analysis Application
+This is the documentation page for SpectraGuru - A Spectral Analysis Application.
 
 <!-- This is a *bare-minimum* template to create a [Jekyll] site that:
 
