@@ -14,5 +14,9 @@ _site/
 .bundle/
 vendor/
 
+# Local OS files and draft notes
+.DS_Store
+temp/
+
 # Local click-to-run docs launcher
 Run Local Docs.command
