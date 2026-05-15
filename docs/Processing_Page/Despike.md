@@ -22,7 +22,7 @@ nav_order: 3
 
 The Despike function, sometimes referred to as spike removal, is an essential tool in the application designed to automatically detect and remove spikes in spectral data, which are often caused by noise or transient artifacts during data acquisition (Cosmic ray spikes can also be removed with this function.) 
 
-## How to Use
+## How to use
 
 To remove spikes in your data:
 
@@ -53,3 +53,7 @@ I(x_j) & \text{if } \text{resid}(x_j) < \text{Threshold} \\
 $$
 
 In this equation, $I(x_j)$ represents the original intensity at position $x_j$, $I'(x_j)$ is the corrected intensity after despiking, $\text{resid}(x_j)$ is the residual difference, $\text{Threshold}$ is the spike detection threshold, and $L$ denotes the `zap_length`. The linear interpolation is calculated over the range of the zap length, ensuring that any detected spikes are replaced with a smooth, continuous line that better reflects the underlying spectral data.
+
+## References
+
+1. SpectraGuru implementation, self-implemented threshold-and-interpolation despiking.

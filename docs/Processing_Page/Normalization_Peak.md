@@ -19,7 +19,11 @@ nav_order: 2
 
 ---
 
-## How to Use
+## Introduction
+
+Normalization by Peak rescales each spectrum so its maximum intensity equals 1.
+
+## How to use
 
 To normalize your data by peak:
 
@@ -37,6 +41,21 @@ S(x)=\frac{I(x)}{I_{\text{max}}}
 $$
 
 where $I_{\text{max}}$ is the peak intensity for a given spectrum.
+
+## Method
+
+The implementation rescales each selected spectrum by its maximum intensity:
+
+$$I_{\text{norm}}(x)=\frac{I(x)}{\max(I)}$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Method choice | Tunable | Selected as **Normalize by peak** |
+| Peak value | Fixed | Per-spectrum maximum intensity |
+
+## References
+
+1. SpectraGuru implementation, self-implemented peak normalization.
 
 ---
 

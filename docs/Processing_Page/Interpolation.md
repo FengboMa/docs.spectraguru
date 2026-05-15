@@ -23,7 +23,7 @@ math: katex
 
 Interpolation is a critical feature in the application that allows users to resample their spectral data, particularly Ramanshift values, to ensure they align with a uniform set of integers. This process is essential for maintaining consistency across datasets, especially when comparing spectra with slightly different measurement intervals. By rounding Ramanshift values to the nearest integer and recalculating the corresponding intensity values, the application ensures that the data is smoothly and accurately represented.
 
-## How to Use
+## How to use
 
 To interpolate your data:
 
@@ -53,3 +53,7 @@ where:
 
 This method effectively smooths the data, filling in gaps and creating a more consistent dataset for further analysis. The `interp1d` function from `scipy.interpolate` is a robust and efficient tool for implementing this interpolation, making it well-suited for processing spectral data.
 
+## References
+
+1. Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., ... SciPy 1.0 Contributors. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. *Nature Methods*, 17, 261-272. https://doi.org/10.1038/s41592-019-0686-2
+2. SciPy Developers. `scipy.interpolate.interp1d`. https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.interp1d.html

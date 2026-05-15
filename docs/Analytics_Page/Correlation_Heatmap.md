@@ -22,7 +22,7 @@ nav_order: 4
 
 The correlation heatmap is another visualization tool used to show how closely overall trends in each spectrum match with each other spectrum. The user is allowed to set a specific range of interest for the correlation values as well as download the data as a comma-separated list (csv) file. The heatmap uses the Pearson Correlation Coefficient as the correlation value.
 
-## How to Use
+## How to use
 
 0. In the analytics page, after processing your data, select “Correlation Heatmap” from the drop-down menu on the left sidebar.
 1. Select whether you would like to set a specific range of interest for the correlation values using the toggle labeled “Customize Heatmap scale.” If activated, additional textboxes will appear requesting a minimum and maximum value.
@@ -41,6 +41,22 @@ The correlation heatmap is another visualization tool used to show how closely o
 - Heatmap scale: The user can change the heatmap scale, which represents the range of expected correlation values. If the “Custom Heatmap scale” toggle is on, heatmap coloring will be based on the value of each correlation coefficient relative to the custom range.
 
 - Display: Each correlation value is displayed on a square grid with side length `N+1`, where `N` is the number of selected spectra (the extra grid space comes from the average spectrum). If the grid size is greater than `10`, the numerical values of the correlation coefficients will not be displayed in order to avoid clutter. The color of each grid space ranges from light yellow to dark red, where darker, redder colors represent high correlation values.
+
+## Method
+
+Pearson correlation compares centered spectra:
+
+$$r_{xy}=\frac{\sum_i (x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_i(x_i-\bar{x})^2}\sqrt{\sum_i(y_i-\bar{y})^2}}$$
+
+Cosine similarity compares vector direction:
+
+$$\cos(\theta)=\frac{x\cdot y}{\lVert x\rVert\lVert y\rVert}$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Correlation Algorithm | Tunable | `Pearson Correlation` or `Cosine Similarity`; default Pearson |
+| Compute Average | Tunable | Adds an average row/column when enabled |
+| Customize Heatmap scale | Tunable | Optional min/max color scale bounds |
 
 ## References
 

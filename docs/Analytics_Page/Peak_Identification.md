@@ -22,7 +22,7 @@ nav_order: 5
 
 The peak identification feature marks the most significant peaks in intensity from the average spectrum. The identified peaks are based on a few user-specified parameters, namely height, threshold, distance, prominence, and width. Each identified peak is listed in a table detailing that peak’s exact Raman shift, intensity, width, prominence, etc. This feature can be used to get specific information about the most important spikes in intensity seen in the spectral data.
 
-## How to Use
+## How to use
 
 0. In the analytics page, after processing your data, select “Peak Identification and Stats” from the drop-down menu on the left sidebar.
 1. By default, “Auto Peak Identification” is turned on. In this case, peaks are sorted by prominence and only a certain number of them are highlighted. To edit this number, adjust the counter labeled “Number of Peaks to identify.”
@@ -51,6 +51,19 @@ The peak identification feature marks the most significant peaks in intensity fr
     4. Left and right bases.
     5. Width.
     6. Width height (the height at which half the prominence height is lost).
+
+## Method
+
+SpectraGuru uses peak properties from the selected target spectrum:
+
+$$\text{peak}(i)=I(y_i>y_{i-1})\land I(y_i>y_{i+1})$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Select spectrum for peak identification | Tunable | `Average` or one selected sample |
+| Auto Peak Identification | Tunable | Automatically selects the requested number of peaks |
+| Height, Threshold, Distance, Prominence, Width | Tunable | Manual `scipy.signal.find_peaks` constraints |
+| Number of Peaks to identify | Tunable | Used in automatic mode |
 
 ## References
 

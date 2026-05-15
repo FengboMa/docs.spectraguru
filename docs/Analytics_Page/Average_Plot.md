@@ -22,7 +22,7 @@ nav_order: 1
 
 Average plot is a simple yet effective way to visualize processed data and detect overall trends. The plot optionally includes the original spectra in lighter colors for additional reference. This feature allows the user to determine which spectra lie close to or far from the mean, as well as exaggerate commonalities between the spectra. There is also an optional graph that plots the standard deviation between all the samples at each Raman frequency shift.
 
-## How to Use
+## How to use
 
 0. In the analytics page, after processing your data, select “Average Plot with Original Spectra” from the drop-down menu on the left sidebar.
 1. Select whether you would like to see the original spectra plotted behind the average spectrum.
@@ -40,3 +40,19 @@ Average plot is a simple yet effective way to visualize processed data and detec
     $$
     
     where $I_i(x)$ is the intensity of spectrum $i$ at Raman shift $x$ $[{cm}^{-1}]$, and $N$ is the total number of samples.
+
+## Method
+
+SpectraGuru computes mean and sample standard deviation at each Raman shift:
+
+$$\bar{I}(x)=\frac{1}{N}\sum_{i=1}^N I_i(x)$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Show spectra you selected | Tunable | Boolean toggle, default `True` |
+| Show Standard Deviation | Tunable | Boolean toggle, default `True` |
+| Output | Fixed | Average, optional selected spectra, optional standard deviation graph, downloadable CSV |
+
+## References
+
+1. SpectraGuru implementation, self-implemented descriptive statistics and plotting.

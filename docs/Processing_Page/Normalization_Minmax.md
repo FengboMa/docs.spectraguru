@@ -19,7 +19,11 @@ nav_order: 3
 
 ---
 
-## How to Use
+## Introduction
+
+Normalization by Min/Max rescales each spectrum to a 0-1 intensity range using its own minimum and maximum values.
+
+## How to use
 
 To normalize your data by minimum & maximum:
 
@@ -37,6 +41,21 @@ S(x)=\frac{I(x)-I_{\text{min}}}{I_{\text{max}}-I_{\text{min}}}
 $$
 
 where $I_{\text{max}}$ is the peak intensity and $I_{\text{min}}$ is the minimum intensity.
+
+## Method
+
+The implementation rescales each selected spectrum independently:
+
+$$I_{\text{norm}}(x)=\frac{I(x)-\min(I)}{\max(I)-\min(I)}$$
+
+| Parameter | Tunable or fixed | Implementation |
+| --- | --- | --- |
+| Method choice | Tunable | Selected as **Min max normalize** |
+| Scaling bounds | Fixed | Per-spectrum minimum and maximum |
+
+## References
+
+1. SpectraGuru implementation, self-implemented min-max normalization.
 
 ---
 

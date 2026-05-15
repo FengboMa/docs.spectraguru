@@ -70,11 +70,11 @@ cd <FILE LOCATION>
 git clone https://github.com/FengboMa/SpectraGuru_beta.git
 ```
 
-- **Run "Spectra Application Welcome.py"**
+- **Run "SpectraGuru Home.py"**
 - **Run the following command**
 
 ```
-streamlit run SpectraGuru_beta/Spectra Application Welcome.py
+streamlit run "SpectraGuru_beta/SpectraGuru Home.py"
 ```
 - **Your local version should be up in port 8501 by default in your favorite browser!**
 
