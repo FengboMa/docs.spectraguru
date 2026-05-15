@@ -5,7 +5,7 @@ gem "jekyll", "~> 4.3.4" # installed by `gem jekyll`
 gem "jekyll-remote-theme"
 gem "jekyll-sass-converter", "~> 2.2"
 
-gem "just-the-docs", "0.10.0" # pinned to the current release
+gem "just-the-docs", "0.12.0" # pinned to the current release
 # gem "just-the-docs"        # always download the latest release
 
 # Keep local builds compatible with the macOS system Ruby 2.6 used on this machine.
