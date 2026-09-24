@@ -21,23 +21,23 @@ math: katex
 
 ## Introduction
 
-Interpolation is a critical feature in the application that allows users to resample their spectral data, particularly Ramanshift values, to ensure they align with a uniform set of integers. This process is essential for maintaining consistency across datasets, especially when comparing spectra with slightly different measurement intervals. By rounding Ramanshift values to the nearest integer and recalculating the corresponding intensity values, the application ensures that the data is smoothly and accurately represented.
+Interpolation resamples spectral intensities onto consecutive integer Raman shift values. The new axis runs from the first integer at or above the original minimum to the last integer at or below the original maximum. Each integer appears once, even when the original Raman shifts are unevenly spaced.
 
 ## How to use
 
 To interpolate your data:
 
-0. Upload data and select spectra you want to process.
-1. Navigate to sidebar and turn on the "Interpolation" toggle.
-2. Click on Process button on the bottom of the sidebar.
+1. Upload data and open **Processing Page**.
+2. Turn on **Interpolation** in the sidebar.
+3. Click **Process** at the bottom of the sidebar.
 
 ## Behavior
 
-The expected behavior of this feature is that, after interpolation, the spectral data will have its Ramanshift values adjusted to a common set of integer values, with corresponding intensity values recalculated through linear interpolation. This adjustment ensures that all spectra within a dataset can be directly compared or combined, which is particularly useful in various analytical and visualization tasks.
+After interpolation, Raman shifts are consecutive integers with no duplicates or gaps. Spectra share this new axis, and each intensity is calculated by linear interpolation between its neighboring original data points.
 
 ## Method
 
-The mathematical foundation of this interpolation process relies on the [`interp1d`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.interp1d.html#scipy.interpolate.interp1d) function from the `scipy.interpolate` module. The function performs a piecewise linear interpolation, which estimates the intensity values at new Ramanshift points based on a linear relationship between neighboring data points in the original dataset.
+SpectraGuru constructs the integer grid from $\lceil x_{\min}\rceil$ through $\lfloor x_{\max}\rfloor$ in steps of one, then uses SciPy's [`interp1d`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.interp1d.html#scipy.interpolate.interp1d) with linear interpolation to estimate each spectrum's intensity on that grid.
 
 The interpolation can be represented mathematically as:
 
@@ -51,7 +51,7 @@ where:
 - $x$ is the new Ramanshift value to which interpolation is applied,
 - $x_i$ and $x_{i+1}$ are the original Ramanshift values that bracket $x$.
 
-This method effectively smooths the data, filling in gaps and creating a more consistent dataset for further analysis. The `interp1d` function from `scipy.interpolate` is a robust and efficient tool for implementing this interpolation, making it well-suited for processing spectral data.
+This resamples the data onto a consistent axis without rounding individual original Raman shifts or intentionally smoothing their intensities.
 
 ## References
 

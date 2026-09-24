@@ -27,12 +27,12 @@ Principal Components Analysis (PCA) is a dimensionality-reduction algorithm that
 1. Upload data and finish preprocessing if needed.
 2. Open **Analytics Page**.
 3. In **Select Analytics Plot**, choose **Principal Components Analysis (PCA)**.
-4. Select **Select Horizontal PC** and **Select Vertical PC** to choose the scatter plot axes.
-5. Toggle **Coloring by setting labels** if label data from Data Upload should color the points.
+4. Use **Select horizontal PC** and **Select vertical PC** to choose the scatter plot axes.
+5. Use the available **PC1 loading curve**, **PC2 loading curve**, and **PC3 loading curve** checkboxes to choose which loading curves to show. All available curves are selected by default.
 
 ## Behavior
 
-SpectraGuru displays a two-dimensional PCA score plot, a cumulative explained variance plot, a loading plot for the first three components, and a table of principal component values. When labels are available and label coloring is enabled, samples are colored by their uploaded labels.
+SpectraGuru displays a two-dimensional PCA score plot, a cumulative explained variance plot, and a **PCA Scores by Spectrum** table. Scores are colored by their uploaded labels; if no label table is available, every spectrum is assigned the same default label. The loading plot shows the selected curves from the first three available components. If no loading curves are selected, that plot is hidden while the scores and variance plots remain.
 
 ## Method
 
@@ -46,9 +46,10 @@ $$T=ZW$$
 
 | Parameter | Tunable or fixed | Implementation |
 | --- | --- | --- |
-| Select Horizontal PC | Tunable | Principal component shown on the x-axis |
-| Select Vertical PC | Tunable | Principal component shown on the y-axis |
-| Coloring by setting labels | Tunable | Uses label data from Data Upload when enabled |
+| Select horizontal PC | Tunable | Principal component shown on the x-axis |
+| Select vertical PC | Tunable | Principal component shown on the y-axis |
+| PC1–PC3 loading curves | Tunable | Up to three available components; all selected by default |
+| Label coloring | Fixed | Scores are colored by label |
 | Scaling | Fixed | Standard scaling before PCA |
 | PCA implementation | Fixed | `sklearn.decomposition.PCA` |
 

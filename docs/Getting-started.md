@@ -23,9 +23,6 @@ For a brief introduction to SpectraGuru, see our [YouTube Video](https://www.you
 
 ### Visit our site
 
-{: .note }
-As of August 16, 2024: For UGA internal use on the development branch. Please connect to the school's local area network (LAN), such as the school Wi-Fi PAWS-Secure, and visit [here](http://172.19.194.69:8501)!
-
 Our application is hosted at [spectraguru.org](https://spectraguru.org)! It's straightforward to use — just follow the link and start exploring.
 
 
@@ -33,50 +30,16 @@ Our application is hosted at [spectraguru.org](https://spectraguru.org)! It's st
 
 You do not need to host the application locally to use it. However, if you wish to deploy it on your local machine, please follow these steps:
 
-- **Install Python and Dependencies**
-   
-   SpectraGuru requires the following packages:
-
-       altair==5.3.0
-
-       deprecation==2.1.0
-
-       matplotlib==3.8.4
-
-       numpy==1.23.5
-
-       pandas==2.2.2
-
-       scikit_learn==1.5.1
-
-       scipy==1.14.0
-
-       streamlit==1.35.0
-
-       streamlit_extras==0.4.3
-
-    Alternatively, you can install the dependencies using the provided `requirements.txt` file:
-
+Use Python 3.12. Clone the repository, install its current dependencies from `requirements.txt`, and run the app:
 
 ```
-pip install -r requirements.txt
-```
-
-- **Clone the main repo**
-
-```
-cd <FILE LOCATION>
-
 git clone https://github.com/FengboMa/SpectraGuru_beta.git
+cd SpectraGuru_beta
+python -m pip install -r requirements.txt
+python -m streamlit run "SpectraGuru Home.py"
 ```
 
-- **Run "SpectraGuru Home.py"**
-- **Run the following command**
-
-```
-streamlit run "SpectraGuru_beta/SpectraGuru Home.py"
-```
-- **Your local version should be up in port 8501 by default in your favorite browser!**
+The local app opens on port 8501 by default.
 
 ---
 
