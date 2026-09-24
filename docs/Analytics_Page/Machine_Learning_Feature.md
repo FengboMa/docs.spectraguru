@@ -35,9 +35,9 @@ Classification pages require every selected spectrum to have a label and require
 
 | Method | Use |
 | --- | --- |
-| [Principal Components Analysis (PCA)](../Analytics_Features/Principal_Component_Analysis/) | Linear dimensionality reduction and loading inspection |
-| [T-SNE Dimensionality Reduction](../Analytics_Features/T-SNE/) | Nonlinear 2D neighborhood visualization |
-| [Hierarchically-clustered Heatmap](../Analytics_Features/Clustermap/) | Ward-linkage clustering and heatmap/dendrogram display |
-| [Random Forest(RF) Classification](Random_Forest_Classification/) | Supervised ensemble classification |
-| [K-Nearest Neighbors(KNN) Classification](KNN_Classification/) | Supervised distance-based classification |
-| [Support Vector Machine(SVM) Classification](SVM_Classification/) | Supervised margin-based classification |
+| [Hierarchically-clustered Heatmap]({{ '/docs/Analytics_Page/Analytics_Features/Clustermap/' | relative_url }}) | Ward-linkage clustering and heatmap/dendrogram display |
+| [Principal Components Analysis (PCA)]({{ '/docs/Analytics_Page/Analytics_Features/Principal_Component_Analysis/' | relative_url }}) | Linear dimensionality reduction and loading inspection |
+| [T-SNE Dimensionality Reduction]({{ '/docs/Analytics_Page/Analytics_Features/T-SNE/' | relative_url }}) | Nonlinear 2D neighborhood visualization |
+| [Random Forest(RF) Classification]({{ '/docs/Analytics_Page/Machine_Learning_Feature/Random_Forest_Classification/' | relative_url }}) | Supervised ensemble classification |
+| [K-Nearest Neighbors(KNN) Classification]({{ '/docs/Analytics_Page/Machine_Learning_Feature/KNN_Classification/' | relative_url }}) | Supervised distance-based classification |
+| [Support Vector Machine(SVM) Classification]({{ '/docs/Analytics_Page/Machine_Learning_Feature/SVM_Classification/' | relative_url }}) | Supervised margin-based classification |

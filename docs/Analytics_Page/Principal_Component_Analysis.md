@@ -4,7 +4,7 @@ title: Principal Components Analysis (PCA)
 parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Principal_Component_Analysis/
-nav_order: 1
+nav_order: 2
 ---
 
 # Principal Components Analysis (PCA)

@@ -21,4 +21,4 @@ nav_order: 6
 
 ## Introduction
 
-The Normalization parent page groups algorithms that rescale spectra for comparison. SpectraGuru includes Area normalization to scale by integrated signal, Peak normalization to scale by maximum intensity, and Min-Max normalization to map each spectrum to a 0-1 range.
+The Normalization parent page groups algorithms that rescale spectra for comparison. SpectraGuru includes Area normalization to scale by integrated signal, Peak normalization to scale by maximum intensity, Min-Max normalization to map each spectrum to a 0-1 range, and Mean normalization to divide by each spectrum's mean intensity.

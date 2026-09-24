@@ -23,5 +23,5 @@ The Toolbox page contains standalone utilities outside the Processing and Analyt
 
 | Tool | Documentation |
 | --- | --- |
-| Spectrum Simulation | [Spectrum Simulation](Toolbox_Page/Spectra_Simulation/) |
-| Peak Assignment Table | [Peak Assignment Table](Toolbox_Page/Peak_Assignment_Table/) |
+| Spectrum Simulation | [Spectrum Simulation](Spectra_Simulation/) |
+| Peak Assignment Table | [Peak Assignment Table](Peak_Assignment_Table/) |

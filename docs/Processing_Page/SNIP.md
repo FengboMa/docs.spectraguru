@@ -4,7 +4,7 @@ title: SNIP
 parent: Baseline Removal
 grand_parent: Processing Feature
 permalink: /docs/Processing_Page/Processing_Feature/Baseline_Removal/SNIP/
-nav_order: 5
+nav_order: 4
 ---
 
 # Sensitive Nonlinear Iterative Peak-clipping (SNIP)

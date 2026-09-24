@@ -6,7 +6,7 @@ plugins:
 favicon_ico: "/assets/images/favicon.png"
 logo: "/assets/images/logo.png"
 
-url: https://github.com/FengboMa/docs.spectraguru
+url: https://fengboma.github.io
 
 
 markdown: kramdown

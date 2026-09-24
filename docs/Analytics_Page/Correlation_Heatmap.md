@@ -4,7 +4,7 @@ title: Correlation Heatmap
 parent: Analytics Features
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Correlation_Heatmap/
-nav_order: 4
+nav_order: 6
 ---
 
 # Correlation Heatmap

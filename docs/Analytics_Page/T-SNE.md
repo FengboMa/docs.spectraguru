@@ -4,7 +4,7 @@ title: T-SNE Dimensionality Reduction
 parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/T-SNE/
-nav_order: 2
+nav_order: 3
 ---
 
 # T-SNE Dimensionality Reduction

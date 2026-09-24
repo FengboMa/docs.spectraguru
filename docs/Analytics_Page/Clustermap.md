@@ -4,7 +4,7 @@ title: Hierarchically-clustered Heatmap
 parent: Machine Learning Feature
 grand_parent: Analytics Page
 permalink: /docs/Analytics_Page/Analytics_Features/Clustermap/
-nav_order: 3
+nav_order: 1
 ---
 
 # Hierarchically-clustered Heatmap

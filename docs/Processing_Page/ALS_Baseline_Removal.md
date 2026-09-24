@@ -4,7 +4,7 @@ title: ALS
 parent: Baseline Removal
 grand_parent: Processing Feature
 permalink: /docs/Processing_Page/Processing_Feature/Baseline_Removal/ALS_Baseline_Removal/
-nav_order: 4
+nav_order: 5
 ---
 
 # Asymmetric Least Squares (ALS)

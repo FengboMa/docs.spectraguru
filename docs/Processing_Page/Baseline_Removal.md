@@ -21,7 +21,7 @@ nav_order: 5
 
 ## Introduction
 
-The Baseline Removal parent page groups algorithms that estimate and subtract broad background trends from spectra. SpectraGuru includes AirPLS for adaptive reweighted smoothing, ModPoly for polynomial baseline fitting, Gaussian-Lorentzian fitting for range-based curve fitting, SNIP for iterative peak clipping, and ALS for asymmetric penalized least-squares smoothing.
+The Baseline Removal parent page groups algorithms that estimate and subtract broad background trends from spectra. SpectraGuru includes AirPLS for adaptive reweighted smoothing, ModPoly for polynomial baseline fitting, Gaussian-Lorentzian fitting for range-based curve fitting, SNIP for iterative peak clipping, ALS for asymmetric penalized least-squares smoothing, and iModPoly for iterative peak removal and polynomial fitting.
 
 ## Behavior
 
@@ -31,3 +31,4 @@ This feature should identify and remove unwanted baselines from spectral data us
 - Gaussian-Lorentzian fitting: Uses a Gaussian-Lorentzian hybrid to fit the data and find a baseline.
 - SNIP: Iteratively clips peaks from a transformed spectrum to estimate background.
 - ALS: Fits a smooth asymmetric least-squares baseline below peaks.
+- iModPoly: Removes peak-dominated points before fitting and subtracting a polynomial background.
